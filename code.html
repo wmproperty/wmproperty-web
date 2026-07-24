@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Servicios | WM PROPERTY - Luxury Real Estate Madrid</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1a1c1c",
+                    "primary": "#000b21",
+                    "on-surface-variant": "#44474d",
+                    "surface-variant": "#e2e2e2",
+                    "outline": "#75777e",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#2f3131",
+                    "primary-fixed-dim": "#bac7e4",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f9f9f9",
+                    "tertiary-container": "#2e1f00",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container": "#eeeeee",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dadada",
+                    "surface-tint": "#525f78",
+                    "secondary-fixed": "#e4e2df",
+                    "on-tertiary-fixed": "#261900",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary-fixed-variant": "#474745",
+                    "on-secondary-container": "#636360",
+                    "on-primary-fixed": "#0e1c31",
+                    "background": "#f9f9f9",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f1f1f1",
+                    "tertiary": "#120a00",
+                    "on-primary-fixed-variant": "#3a475f",
+                    "tertiary-fixed": "#ffdea5",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5f5e5c",
+                    "surface-container-low": "#f3f3f3",
+                    "on-tertiary-container": "#a68440",
+                    "primary-fixed": "#d7e3ff",
+                    "surface-bright": "#f9f9f9",
+                    "outline-variant": "#c5c6cd",
+                    "secondary-fixed-dim": "#c8c6c3",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#7d89a4",
+                    "secondary-container": "#e1dfdc",
+                    "on-secondary-fixed": "#1b1c1a",
+                    "inverse-primary": "#bac7e4",
+                    "on-background": "#1a1c1c",
+                    "primary-container": "#152238"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "section-padding-v": "120px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "section-padding-h": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "title-lg": ["20px", {"lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .low-contrast-outline {
+            border: 1px solid #E8E6E3;
+        }
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center w-full px-section-padding-h py-6 max-w-container-max mx-auto bg-surface border-b border-outline-variant">
+<div class="flex items-center">
+<span class="text-label-sm font-label-sm font-bold tracking-[0.3em] text-primary">WM PROPERTY</span>
+</div>
+<div class="hidden md:flex gap-8">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Comprar</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Alquilar</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Proyectos</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Nosotros</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Blog</a>
+<a class="text-label-sm font-label-sm text-primary border-b border-primary pb-1" href="#">Servicios</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-label-sm font-label-sm text-on-surface-variant cursor-pointer hover:text-primary transition-colors">ES/EN</span>
+<a class="bg-primary text-on-primary px-6 py-3 text-label-sm font-label-sm tracking-widest hover:opacity-90 transition-all uppercase" href="https://wa.me/something">
+                Hablar por WhatsApp
+            </a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-section-padding-h py-section-padding-v">
+<div class="max-w-4xl">
+<span class="text-label-sm font-label-sm text-on-tertiary-container uppercase mb-4 block">Excelencia en Gestión</span>
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary mb-8 leading-tight">
+                    Servicios Inmobiliarios con Rigor Arquitectónico.
+                </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                    Ofrecemos una gestión integral de activos para inversores internacionales y clientes locales, fusionando el análisis financiero con una curaduría estética de alto nivel en el mercado de Madrid.
+                </p>
+</div>
+</section>
+<!-- Service Cards Section -->
+<section class="max-w-container-max mx-auto px-section-padding-h pb-section-padding-v">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Service 1: Inversión Inmobiliaria -->
+<div class="flex flex-col group">
+<div class="aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale-[0.3] group-hover:scale-105 transition-transform duration-700" data-alt="A sophisticated architectural interior of a minimalist Madrid luxury apartment with high ceilings, large windows, and warm natural lighting. The scene emphasizes premium materials like marble and dark wood, reflecting a sober luxury aesthetic. The mood is quiet and professional, perfect for a high-end real estate investment showcase." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUcWZs_sM9jXxfSmwDsTSD_OBZKeFwKJGRBU8AqmvuILer8_N8mmh9smOJrnh0ANDGpNHqf6RbgjlxiGgn7DC6pLU3fYJW_Rx4a8WNrx_6_ywmgsBEP88AE8YBAD3t6z3bqZOHyVgdnsPmhURanyqVasW6ANefxHH0J-rOl_JS7xgekrt3GZv6I32BynfQ1BodpPlECBnOWYQizGZDSa8R6WANv7TBg7F2jPBRsNTIh1iM1R14vbhdOYN-HjbFfuC5IMVsFYQ-j4C2"/>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">01 / ESTRATEGIA</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-4">Inversión Inmobiliaria</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                        Análisis profundo de rentabilidades, ubicación y potencial de revalorización. Diseñamos carteras de inversión adaptadas a perfiles que buscan seguridad y crecimiento sostenido en la capital.
+                    </p>
+<a class="text-label-sm font-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        DESCUBRIR MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2: Alquiler (normativa LAU) -->
+<div class="flex flex-col group md:mt-24">
+<div class="aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale-[0.3] group-hover:scale-105 transition-transform duration-700" data-alt="A professional detail shot of a modern office desk within a high-end residence, featuring a leather-bound folder and a designer lamp. The lighting is soft and directional, highlighting the textures of the materials. The atmosphere is legal, structured, and trustworthy, symbolizing the meticulous management of rental contracts under Spanish law." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk3k13t6DfVwWlfb0yVrK95E3a9c6kSr198tPKkBFWsPlGjrjuKdhWh1il_05jCOIc54dEKt9FXvKuhGxW6WDpU8kvH1EUrzsdnTACGOUGgRxizrmIhUCBQ3IhQ2yF6RIwVM-6a-SO0G-BdA4HTJjW8pfMoJ_p1A4wtpoAvACW-h5NBzWF9RaAKcSmPSl_NW4p6hy-LTyeE8WJ4x44MFkXLMB63PJyb1rZVmt7eicy4I1aEOvRcXhU4HK1qcVDs3xcFwE438wOTZBq"/>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">02 / GESTIÓN</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-4">Alquiler (Normativa LAU)</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                        Gestión jurídica y operativa completa bajo la Ley de Arrendamientos Urbanos. Filtramos perfiles de inquilinos premium para asegurar la máxima tranquilidad y cumplimiento normativo del propietario.
+                    </p>
+<a class="text-label-sm font-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        DESCUBRIR MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3: Compra/Venta -->
+<div class="flex flex-col group">
+<div class="aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale-[0.3] group-hover:scale-105 transition-transform duration-700" data-alt="An exterior view of a historic classic building in Madrid, capturing the elegant facade and ornate balconies during the golden hour. The sunlight strikes the stone details softly, creating a sense of timeless value and heritage. The image represents the high-end purchase and sale of exclusive properties in Madrid's most prestigious neighborhoods." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcFqT4Rv9VFL2FKdWb0Ysj8OLrc78-qavwNXFenwWI24SpfF7bZViUZbPAYE_S_8H4f8hRA6dCNOzEUkHMZW3vF2K1nSO9VUA8qatFXwEuVDwuLhPhz1jXEJV98M0IRikVacGZtA9uRdFbfO_HcX5EkLNOx1-nlx0z8JihpnlDgmvaOzE2jLJ5IO3B88D1yVQqbxEK6i0KBbO2h9KcIFRqu2cm01NmuN9YZKUqm4_Ma-6PAA0Z8STAjl9j8NgwUtdVtlsxIVLlD5ZG"/>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">03 / TRANSACCIÓN</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-4">Compra / Venta</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                        Acompañamiento en todo el ciclo transaccional. Desde la valoración técnica hasta la firma notarial, garantizamos una ejecución impecable y discreta para ambas partes.
+                    </p>
+<a class="text-label-sm font-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        DESCUBRIR MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4: Inversión Conjunta -->
+<div class="flex flex-col group md:mt-24">
+<div class="aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale-[0.3] group-hover:scale-105 transition-transform duration-700" data-alt="A group of architectural models on a clean, white table in a bright studio environment. The models are made of light wood and white acrylic, showing a modern residential development. The focus is sharp on the foreground model, with a blurred background of architectural sketches. It represents the concept of collaborative investment and project development." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEBDLWymLPYWdVH23KZMp0cmIKPRFRcYfLliBDAGRBF4r-4OoHqgM1sXcxNkqRcZWEUM8MYnJbT3jwqBMZNLYUQCKeL6YULVYwKCnv7F7YRu4SnZiw9lXeSWd1LmL9b4yUeMJNqBFkUxoX6V4ynmRUUZR9pJ39hw9ypHjiuOo2W2QJJgtR8IRGk9YT8b2XneVCW-sF7D90aIDGHRaSpGwE8zUhZ1Q0bOMnmKrE7b2saeMtJjtM5tO5k1MTMtOvjO4r_G3_JQmemy5o"/>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">04 / SINERGIA</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-4">Inversión Conjunta</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                        Oportunidades de co-inversión en proyectos de rehabilitación y promoción. Acceda a activos de gran escala mediante estructuras societarias transparentes y seguras.
+                    </p>
+<a class="text-label-sm font-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        DESCUBRIR MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Transparency Block -->
+<section class="bg-primary text-on-primary py-section-padding-v px-section-padding-h">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div>
+<span class="text-label-sm font-label-sm text-on-primary-container tracking-widest uppercase mb-6 block">Nuestra Ética</span>
+<h2 class="text-display-lg-mobile md:text-headline-md font-headline-md mb-8">Transparencia Radical en Honorarios</h2>
+<p class="text-body-lg font-body-lg opacity-80 mb-8">
+                        Creemos que la confianza es el activo más valioso en el sector inmobiliario. Nuestro modelo de honorarios es simple, sin costes ocultos ni comisiones cruzadas que nublen nuestro juicio profesional.
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-primary-container">check_circle</span>
+<div>
+<h4 class="font-bold text-body-md">Tarifas Fijas por Éxito</h4>
+<p class="text-sm opacity-70">Solo percibimos honorarios cuando el objetivo del cliente se cumple al 100%.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-primary-container">check_circle</span>
+<div>
+<h4 class="font-bold text-body-md">Cero Conflictos de Interés</h4>
+<p class="text-sm opacity-70">No aceptamos incentivos de terceros que puedan comprometer nuestra recomendación objetiva.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative aspect-video md:aspect-square bg-on-primary-fixed-variant overflow-hidden group">
+
+<div class="absolute inset-0 flex items-center justify-center p-12 border border-on-primary/10 m-8">
+<div class="text-center">
+<span class="text-display-lg font-display-lg block mb-2">100%</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest">Alineados con el cliente</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-container-max mx-auto px-section-padding-h py-section-padding-v">
+<div class="max-w-3xl mx-auto text-center mb-20">
+<h2 class="text-headline-md font-headline-md text-primary mb-4">Preguntas Frecuentes</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Resolvemos las dudas más habituales de nuestros inversores internacionales.</p>
+</div>
+<div class="max-w-3xl mx-auto divide-y divide-outline-variant">
+<!-- FAQ 1 -->
+<details class="group py-8">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h4 class="text-title-lg font-title-lg text-primary">¿Cuál es el marco legal para un inversor extranjero?</h4>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                        España ofrece un marco jurídico muy sólido para la inversión extranjera. Gestionamos desde la obtención del NIE hasta la apertura de cuentas bancarias y cumplimiento con las normativas antiblanqueo de capitales (SEPBLAC). Además, asesoramos sobre la Golden Visa si el volumen de inversión lo permite.
+                    </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group py-8">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h4 class="text-title-lg font-title-lg text-primary">¿Cómo mitigan el riesgo de desocupación o impago?</h4>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                        Nuestra estrategia se basa en la selección de activos en zonas de altísima demanda (Prime). Realizamos un scoring exhaustivo de inquilinos y, opcionalmente, contratamos seguros de impago de rentas con las principales aseguradoras del mercado, garantizando el flujo de caja.
+                    </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group py-8">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h4 class="text-title-lg font-title-lg text-primary">¿Puedo invertir si no resido en España?</h4>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                        Absolutamente. El 70% de nuestros clientes son internacionales. Ofrecemos un servicio de "llaves en mano" donde actuamos como sus ojos y manos en Madrid, enviando informes técnicos, reportes fotográficos y gestionando firmas mediante poderes notariales específicos.
+                    </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group py-8">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h4 class="text-title-lg font-title-lg text-primary">¿Qué rentabilidad media puedo esperar en Madrid?</h4>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                        Dependiendo del tipo de activo y zona, la rentabilidad neta por alquiler suele oscilar entre el 3.5% y el 5.5% en residencial Prime. Sin embargo, el valor diferencial de Madrid reside en su fuerte apreciación de capital anual, que a menudo supera el 4-6%.
+                    </div>
+</details>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-container-max mx-auto px-section-padding-h pb-section-padding-v">
+<div class="bg-surface-container border border-outline-variant p-12 md:p-24 text-center">
+<h2 class="text-headline-md font-headline-md text-primary mb-6">Comencemos a trazar su estrategia.</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-10 max-w-xl mx-auto">
+                    Agende una consulta privada con nuestros asesores para analizar sus objetivos patrimoniales.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 text-label-sm font-label-sm tracking-widest hover:opacity-90 transition-all uppercase">
+                        SOLICITAR CONSULTA
+                    </button>
+<button class="border border-primary text-primary px-10 py-4 text-label-sm font-label-sm tracking-widest hover:bg-primary hover:text-on-primary transition-all uppercase">
+                        DESCARGAR BROCHURE
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-padding-v px-section-padding-h max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary text-on-primary">
+<div class="col-span-1 md:col-span-1">
+<div class="text-title-lg font-headline-md tracking-[0.2em] text-on-primary mb-8">WM PROPERTY</div>
+<p class="text-label-sm font-label-sm text-surface-variant leading-relaxed">
+                Consultoría inmobiliaria de autor.<br/>
+                Especialistas en activos singulares y gestión patrimonial en Madrid.
+            </p>
+</div>
+<div>
+<h5 class="text-title-lg font-title-lg mb-6">Explorar</h5>
+<ul class="space-y-4">
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Inicio</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Comprar</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Alquilar</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Proyectos</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-title-lg font-title-lg mb-6">Servicios</h5>
+<ul class="space-y-4">
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Inversión</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Gestión Alquiler</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Legal &amp; Tax</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Personal Shopper</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-title-lg font-title-lg mb-6">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Aviso Legal</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Privacidad</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Cookies</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+<div class="col-span-1 md:col-span-4 mt-16 pt-8 border-t border-on-primary-fixed-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-label-sm font-label-sm text-surface-variant opacity-60">© 2024 WM PROPERTY. Madrid, España.</span>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-surface-variant cursor-pointer hover:text-tertiary-fixed transition-colors">public</span>
+<span class="material-symbols-outlined text-surface-variant cursor-pointer hover:text-tertiary-fixed transition-colors">mail</span>
+<span class="material-symbols-outlined text-surface-variant cursor-pointer hover:text-tertiary-fixed transition-colors">share</span>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (WhatsApp FAB) -->
+<a class="fixed bottom-8 right-8 z-50 bg-tertiary-container text-on-tertiary p-4 rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all duration-300" href="https://wa.me/something">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</a>
+<script>
+        // Simple micro-interaction for detail reveal
+        document.querySelectorAll('details').forEach((el) => {
+            el.addEventListener('toggle', (e) => {
+                if (el.open) {
+                    document.querySelectorAll('details').forEach((other) => {
+                        if (other !== el) other.removeAttribute('open');
+                    });
+                }
+            });
+        });
+    </script>
+</body></html>

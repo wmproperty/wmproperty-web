@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Palacio de Justicia I | WM Property Madrid</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed": "#261900",
+                "on-secondary-container": "#636360",
+                "surface-container": "#eeeeee",
+                "primary": "#000b21",
+                "on-error": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "outline-variant": "#c5c6cd",
+                "outline": "#75777e",
+                "secondary-fixed-dim": "#c8c6c3",
+                "on-background": "#1a1c1c",
+                "primary-fixed-dim": "#bac7e4",
+                "tertiary-fixed-dim": "#e9c176",
+                "tertiary-fixed": "#ffdea5",
+                "on-error-container": "#93000a",
+                "on-secondary-fixed-variant": "#474745",
+                "surface-variant": "#e2e2e2",
+                "surface-container-high": "#e8e8e8",
+                "secondary-container": "#e1dfdc",
+                "on-primary": "#ffffff",
+                "tertiary": "#120a00",
+                "on-surface-variant": "#44474d",
+                "on-primary-container": "#7d89a4",
+                "surface": "#f9f9f9",
+                "inverse-surface": "#2f3131",
+                "on-secondary": "#ffffff",
+                "inverse-primary": "#bac7e4",
+                "error-container": "#ffdad6",
+                "secondary": "#5f5e5c",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "on-primary-fixed-variant": "#3a475f",
+                "surface-dim": "#dadada",
+                "inverse-on-surface": "#f1f1f1",
+                "surface-container-low": "#f3f3f3",
+                "primary-container": "#152238",
+                "background": "#f9f9f9",
+                "secondary-fixed": "#e4e2df",
+                "surface-bright": "#f9f9f9",
+                "primary-fixed": "#d7e3ff",
+                "on-secondary-fixed": "#1b1c1a",
+                "surface-tint": "#525f78",
+                "on-surface": "#1a1c1c",
+                "on-primary-fixed": "#0e1c31",
+                "surface-container-lowest": "#ffffff",
+                "error": "#ba1a1a",
+                "on-tertiary-container": "#a68440",
+                "tertiary-container": "#2e1f00",
+                "surface-container-highest": "#e2e2e2"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "unit": "8px",
+                "gutter": "24px",
+                "section-padding-v": "120px",
+                "section-padding-h": "24px",
+                "container-max": "1280px"
+            },
+            "fontFamily": {
+                "label-sm": ["Inter"],
+                "headline-md": ["Playfair Display"],
+                "display-lg-mobile": ["Playfair Display"],
+                "body-lg": ["Inter"],
+                "title-lg": ["Inter"],
+                "display-lg": ["Playfair Display"],
+                "body-md": ["Inter"]
+            },
+            "fontSize": {
+                "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "title-lg": ["20px", {"lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #000b21; }
+        
+        .sticky-form {
+            position: sticky;
+            top: 100px;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 300px);
+            gap: 12px;
+        }
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased font-body-md">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-primary-container border-b border-outline-variant dark:border-on-primary-fixed-variant flex justify-between items-center w-full px-section-padding-h max-w-container-max mx-auto h-20 sticky top-0 z-[100] transition-all duration-300">
+<div class="text-title-lg font-title-lg font-bold tracking-tighter text-primary dark:text-on-primary-container">
+            WM Property
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-sm text-label-sm" href="#">Propiedades</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Proyectos</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Invertir</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Nosotros</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-label-sm font-label-sm text-primary">ES/EN</span>
+<button class="bg-primary text-on-primary px-6 py-3 font-label-sm text-label-sm uppercase tracking-widest hover:opacity-90 transition-opacity">
+                Hablar por WhatsApp
+            </button>
+</div>
+</nav>
+<!-- SideNavBar (FAB) -->
+<div class="fixed bottom-8 right-8 z-50 flex items-center justify-center">
+<a class="bg-tertiary-container dark:bg-tertiary-fixed text-on-tertiary-container dark:text-on-tertiary-fixed rounded-full w-14 h-14 shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</a>
+</div>
+<main class="max-w-container-max mx-auto px-section-padding-h pt-8">
+<!-- Gallery Bento Grid -->
+<section class="bento-grid mb-12">
+<div class="col-span-2 row-span-2 overflow-hidden bg-surface-container relative group cursor-zoom-in">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A grand, bright living room in a historic Madrid palace renovation. High ceilings with original moldings, herringbone dark wood floors, and floor-to-ceiling windows overlooking the Justice neighborhood. The furniture is minimalist and premium, featuring cream sofas and a marble coffee table. The light is soft morning sun, accentuating the luxury and heritage of the space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAir-js_d9FOk8e6KYKekIthflUIZsDYU30bBhpTXtBYIn4efh8qugdqCLdThCoN4VDPuGtVsyNOG9WCphjMuqAOFmgS8PSJEEJ-aI1ckr7O0aporIjW7kmDGwjKIzrgcHcrZA-ufRHNr1Ku7JcbS5VsaeRF8s0sUski-qmCmBnN_RpTkfah7CB5CbBgzI-uqovHU86hceo5tV0XBULhn2R5r3u_qb8wN9o_cv2fk_qpXGvMbazbWGZsmdh_1ZepSvxplUsHqbeujRR"/>
+</div>
+<div class="col-span-2 overflow-hidden bg-surface-container relative group cursor-zoom-in">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A modern, high-end kitchen within a classic architectural shell. Matte navy cabinetry, brushed brass fixtures, and a large Calacatta marble island. The aesthetic is clean and prestigious, balancing contemporary functionality with timeless elegance in a light-mode editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCE83J3gyA_pjGPtP1qx-wmtl7mKSRnOY5xUFhtl2xz9TYfd7XvfdtZHup78zb-uycAtMuihCZsZXkMuRizM8VArhqkMKQZHFr5udKTkF1wOqllhu0O0kSNlEvQwLstN-i5I6JYrKEGxqIk_yttJ4S_ss_9nqz7jPibImQUypjpPj_pfWFX-QH8nNVpQoqIxiMkDh2S5hkeAqMEweQJV0bOPMpCeipkGWnrwp3jQ6wMjvWMPHFtTr046wqlArClqbLZpzuzDSarX2W"/>
+</div>
+<div class="overflow-hidden bg-surface-container relative group cursor-zoom-in">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed shot of the master suite ensuite bathroom. Large format stone tiles, a freestanding soaking tub, and custom lighting that creates a spa-like atmosphere. The palette is muted and sophisticated, reflecting sober luxury and architectural precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv9789fwHwwZPt-P75po9eSsNzTaLYfhErV6MmXD3lIg28-r6ms-lI_CSWIbl_rHdfMVkc-nX6UDsTeH-L07VbCyMeCMU-ViD7CxAvBegyqOHZTsNYkG5k1fgHDGjlG-gbo45Er20r6H_k3EuYj2DtQJbb4b1i4A9V2jkrG8WYxZM9ge3QNM4M1YqAl9wklqaBdMtLo0N7BbYqz0Yn7eUBm_Etd4M_Bq3LyMcf-3sVJLGeuTEGWbNgWoNEefevZ4UL_jQHqm5VxgJO"/>
+</div>
+<div class="overflow-hidden bg-surface-container relative group cursor-zoom-in">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An exterior view of the historic building facade in the Justicia district of Madrid. Intricate wrought iron balconies and traditional stone carvings. The street is lined with trees and elegant boutiques, conveying a sense of exclusivity and global permanence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBffpc6-DmnGNpm0uHip4wfV_MwGB72AAMk9H2jrf5hNpsQ-0Z4Z__oVvbM6dwyPUgrALTJTal7Qhsc5865Tte97Prji-4KbghV_WzmkdKeNztdkJ4kSW1QOfZCg1l7or3tqlm82mg_-AyvP7Ywiju6HjP4nLM_6YiPj-Ulw57Z9N1sDJwNLIq4k9kotraOISj3vVPmTdtAhGqvgAMGOouEwr9jCLp1LwYsefCt1iDs8uA4I0mMoIaDDQtR4LZqrzDW0EiTR0Fg9r9v"/>
+</div>
+</section>
+<!-- Main Content Wrapper -->
+<div class="flex flex-col lg:flex-row gap-gutter pb-section-padding-v">
+<!-- Left Column: Details -->
+<div class="lg:w-2/3">
+<header class="mb-12 border-b border-outline-variant pb-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="flex items-center gap-1 text-label-sm font-label-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                            DISPONIBLE
+                        </span>
+<span class="text-outline">/</span>
+<span class="text-label-sm font-label-sm text-outline">REF: WM-2024-081</span>
+</div>
+<h1 class="font-headline-md text-display-lg-mobile md:text-headline-md text-primary mb-2">Palacio de Justicia I</h1>
+<p class="text-title-lg text-secondary mb-6 italic">Justicia, Madrid</p>
+<div class="flex flex-wrap gap-12 mt-8">
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-widest mb-1">Precio</p>
+<p class="text-headline-md font-headline-md text-primary">1.450.000 €</p>
+</div>
+<div class="grid grid-cols-3 gap-8">
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-widest mb-1">Hab.</p>
+<p class="text-title-lg font-title-lg text-primary">3</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-widest mb-1">Baños</p>
+<p class="text-title-lg font-title-lg text-primary">3</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-widest mb-1">Área</p>
+<p class="text-title-lg font-title-lg text-primary">185 m²</p>
+</div>
+</div>
+</div>
+</header>
+<article class="prose prose-slate max-w-none mb-16">
+<h3 class="font-headline-md text-title-lg text-primary mb-6">Un refugio de serenidad en el corazón histórico</h3>
+<p class="text-body-lg text-on-surface-variant leading-relaxed mb-6">
+                        Ubicado en una de las fincas más emblemáticas del barrio de Justicia, el Palacio de Justicia I representa la culminación del diseño contemporáneo respetuoso con el patrimonio. Esta residencia ha sido meticulosamente rehabilitada para ofrecer un estándar de vida que trasciende lo convencional, fusionando la escala señorial de sus techos de 4 metros con una domótica de última generación totalmente integrada.
+                    </p>
+<p class="text-body-lg text-on-surface-variant leading-relaxed mb-6">
+                        La zona social se distribuye en tres estancias conectadas que permiten una circulación fluida, bañadas por una luz natural tamizada que resalta las molduras originales recuperadas a mano. Cada material ha sido seleccionado por su procedencia y longevidad, desde el mármol italiano en las zonas húmedas hasta el roble francés que recorre toda la vivienda.
+                    </p>
+</article>
+<section class="mb-16">
+<h3 class="font-headline-md text-title-lg text-primary mb-8">Rentabilidad Estimada</h3>
+<div class="overflow-x-auto border border-outline-variant">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low">
+<th class="p-6 text-label-sm font-label-sm text-primary border-b border-outline-variant">ESCENARIO</th>
+<th class="p-6 text-label-sm font-label-sm text-primary border-b border-outline-variant">MENSUAL</th>
+<th class="p-6 text-label-sm font-label-sm text-primary border-b border-outline-variant">ANUAL</th>
+<th class="p-6 text-label-sm font-label-sm text-primary border-b border-outline-variant">NETO (ROI)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<tr>
+<td class="p-6 font-medium text-primary">Alquiler Residencial</td>
+<td class="p-6">4.800 €</td>
+<td class="p-6">57.600 €</td>
+<td class="p-6 text-primary-container font-bold">3.9%</td>
+</tr>
+<tr>
+<td class="p-6 font-medium text-primary">Media Estancia</td>
+<td class="p-6">6.200 €</td>
+<td class="p-6">74.400 €</td>
+<td class="p-6 text-primary-container font-bold">5.1%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="mb-16">
+<h3 class="font-headline-md text-title-lg text-primary mb-6">Ubicación</h3>
+<div class="h-96 w-full bg-surface-container grayscale hover:grayscale-0 transition-all duration-700" data-location="Justicia, Madrid" style="">
+<!-- Map implementation placeholder -->
+<div class="w-full h-full flex items-center justify-center text-outline-variant">
+<span class="material-symbols-outlined text-display-lg" data-icon="map">map</span>
+</div>
+</div>
+<p class="mt-4 text-label-sm font-label-sm text-outline">JUSTICIA, MADRID. BARRIO EXCLUSIVO RODEADO DE GALERÍAS DE ARTE Y BOUTIQUES DE AUTOR.</p>
+</section>
+</div>
+<!-- Right Column: Sticky Contact Sidebar -->
+<aside class="lg:w-1/3">
+<div class="sticky-form p-8 bg-surface-container-lowest border border-outline-variant shadow-sm">
+<h4 class="font-headline-md text-title-lg text-primary mb-6">Solicitar Dossier</h4>
+<form class="space-y-6">
+<div>
+<label class="font-label-sm text-label-sm text-outline block mb-2">NOMBRE COMPLETO</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-2 px-0" placeholder="Su nombre..." type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-outline block mb-2">EMAIL</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-2 px-0" placeholder="email@ejemplo.com" type="email"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-outline block mb-2">TELÉFONO</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-2 px-0" placeholder="+34 ..." type="tel"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-outline block mb-2">MENSAJE</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-2 px-0 resize-none" rows="3">Me gustaría recibir más información sobre Palacio de Justicia I.</textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-opacity-95 transition-all">
+                            Enviar Solicitud
+                        </button>
+</form>
+<div class="mt-8 pt-8 border-t border-outline-variant">
+<button class="w-full flex items-center justify-center gap-3 border border-primary text-primary py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                            Preguntar por esta propiedad
+                        </button>
+</div>
+</div>
+</aside>
+</div>
+<!-- Similar Properties -->
+<section class="py-section-padding-v border-t border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-primary mb-12 text-center">Propiedades Similares</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<a class="group block" href="#">
+<div class="aspect-[4/3] overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A luxurious interior of a boutique apartment in Madrid. Neutral tones, large windows, and designer lighting. The image captures a serene, high-end residential atmosphere consistent with premium real estate photography for a luxury brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3HsqhuH_Wa6CISS0OzRqrzeBb9BVZ4O-yhsAXmKtxslsX4eqgT_PNyI65kB4qh2CyHP25QGykKn9LpsNyCapNAM9__8MaqNmwLJK9Pa1tKbyj6H8CKmh7uFmoWNcqlCgXTcWusIoZ8JbOdudFDL8OqrakaUg8BvHbCugMCnhjwJAtMaS5e4c7-ptx10HyLqgzaHqGMqNUnUOdo20tqVfgQwVB7hSe8NldRDIqVPY4GF9W5nPExonhg9mfljMkiTEJuledmrC19-Gk"/>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<p class="text-label-sm font-label-sm text-primary uppercase">ALMAGRO</p>
+</div>
+<h4 class="font-headline-md text-title-lg text-primary mb-1 group-hover:underline">Residencia Santa Engracia</h4>
+<p class="text-body-md text-secondary">1.280.000 € • 2 Hab • 140 m²</p>
+</a>
+<!-- Card 2 -->
+<a class="group block" href="#">
+<div class="aspect-[4/3] overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A modern penthouse balcony overlooking the Madrid skyline at dusk. Elegant outdoor furniture, glass railings, and warm ambient lighting. The mood is exclusive, private, and extremely high-end, evoking the feeling of a prestigious urban sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkh0lYEvLcS-xhCAhtMbELqOAC0fjk7JiU4-B8Eso6XnhmJI3YddkHK-X85qBDbnSRXIZ5wGG5kS87DWULi3V8hWJ1xx5Bt4yw5dLaRZi0mJCHVjjtXv8K4_zq7BolLA_2eelN8534dYt9FJrEqRmbaC_4Qkp2KeuQKxLxA-EY9Z0NKqanZ39oi2mIfJD2fJ67afR8Bg9AE3U7LKZBHmVY4h2wpSPot4u2XrF1jawbR8unFBGMZI75qcUG6ZMaoL4Gfa1viuJrjPKz"/>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<p class="text-label-sm font-label-sm text-primary uppercase">RECOLETOS</p>
+</div>
+<h4 class="font-headline-md text-title-lg text-primary mb-1 group-hover:underline">Ático Serrano VII</h4>
+<p class="text-body-md text-secondary">3.150.000 € • 3 Hab • 220 m²</p>
+</a>
+<!-- Card 3 -->
+<a class="group block" href="#">
+<div class="aspect-[4/3] overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist architectural detail of a luxury renovation in Madrid. High ceilings with restored plasterwork, white walls, and a single designer chair in a pool of natural light. The style is editorial and clean, emphasizing space and architectural precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPQqs2DxcqiSYM4l9lV75_H1O4wecie6O_RDpYQSnGgdLNnYuxIVkgFPgF781QbidjJA-mRBOt8rl2KEgJNvdEniZ8B7K143T3Q4mcbmhHzOLfdaaPKcdBrVKsbtrcnV5ZffBDEC-Ktu34hqitUXNiaoPRuK890UhBM4_cr3ouU0pvvKucEvPh-0LHFtrbPxbw1XseHrWUPOcxS-W6dbeSsvvBM5yMJLHqaBw4KS68TcGEdCUPJ0ny0GvLkQEzweyfLNOWCdt7csWh"/>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-[#C5A059]"></span>
+<p class="text-label-sm font-label-sm text-on-tertiary-container uppercase">RESERVADO</p>
+</div>
+<h4 class="font-headline-md text-title-lg text-primary mb-1 group-hover:underline">Palacio de Justicia II</h4>
+<p class="text-body-md text-secondary">1.520.000 € • 3 Hab • 190 m²</p>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-primary w-full py-section-padding-v px-section-padding-h border-t border-on-primary-fixed-variant">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1">
+<div class="text-headline-md font-headline-md text-on-primary dark:text-primary mb-6">WM Property</div>
+<p class="text-body-md font-body-md opacity-80 mb-8">Especialistas en activos inmobiliarios de lujo y consultoría de inversión en el corazón de Madrid.</p>
+</div>
+<div class="space-y-4">
+<h5 class="text-label-sm font-label-sm uppercase tracking-widest opacity-60">Explorar</h5>
+<ul class="space-y-2">
+<li><a class="text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors text-body-md" href="#">Propiedades</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors text-body-md" href="#">Invertir</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors text-body-md" href="#">Nosotros</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-label-sm font-label-sm uppercase tracking-widest opacity-60">Legal</h5>
+<ul class="space-y-2">
+<li><a class="text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors text-body-md" href="#">Aviso Legal</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors text-body-md" href="#">Privacidad</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors text-body-md" href="#">Cookies</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-label-sm font-label-sm uppercase tracking-widest opacity-60">Contacto</h5>
+<p class="text-body-md text-outline-variant">Calle de Orellana, 12<br/>28004 Justicia, Madrid</p>
+<p class="text-body-md text-outline-variant">+34 912 345 678</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-20 pt-8 border-t border-on-primary-fixed-variant opacity-40">
+<p class="text-label-sm font-label-sm">© 2024 WM Property Madrid. Todos los derechos reservados.</p>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for the gallery
+        document.querySelectorAll('.bento-grid img').forEach(img => {
+            img.addEventListener('click', () => {
+                console.log('Open Lightbox');
+            });
+        });
+
+        // Sticky Header Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-sm');
+                nav.classList.remove('h-20');
+                nav.classList.add('h-16');
+            } else {
+                nav.classList.remove('shadow-sm');
+                nav.classList.remove('h-16');
+                nav.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>

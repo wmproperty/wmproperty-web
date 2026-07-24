@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-surface": "#1a1c1c",
+                "primary": "#000b21",
+                "on-surface-variant": "#44474d",
+                "surface-variant": "#e2e2e2",
+                "outline": "#75777e",
+                "on-tertiary": "#ffffff",
+                "on-error-container": "#93000a",
+                "inverse-surface": "#2f3131",
+                "primary-fixed-dim": "#bac7e4",
+                "surface-container-lowest": "#ffffff",
+                "surface": "#f9f9f9",
+                "tertiary-container": "#2e1f00",
+                "surface-container-highest": "#e2e2e2",
+                "surface-container": "#eeeeee",
+                "on-error": "#ffffff",
+                "error-container": "#ffdad6",
+                "surface-dim": "#dadada",
+                "surface-tint": "#525f78",
+                "secondary-fixed": "#e4e2df",
+                "on-tertiary-fixed": "#261900",
+                "surface-container-high": "#e8e8e8",
+                "on-secondary-fixed-variant": "#474745",
+                "on-secondary-container": "#636360",
+                "on-primary-fixed": "#0e1c31",
+                "background": "#f9f9f9",
+                "on-primary": "#ffffff",
+                "inverse-on-surface": "#f1f1f1",
+                "tertiary": "#120a00",
+                "on-primary-fixed-variant": "#3a475f",
+                "tertiary-fixed": "#ffdea5",
+                "tertiary-fixed-dim": "#e9c176",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "on-secondary": "#ffffff",
+                "secondary": "#5f5e5c",
+                "surface-container-low": "#f3f3f3",
+                "on-tertiary-container": "#a68440",
+                "primary-fixed": "#d7e3ff",
+                "surface-bright": "#f9f9f9",
+                "outline-variant": "#c5c6cd",
+                "secondary-fixed-dim": "#c8c6c3",
+                "error": "#ba1a1a",
+                "on-primary-container": "#7d89a4",
+                "secondary-container": "#e1dfdc",
+                "on-secondary-fixed": "#1b1c1a",
+                "inverse-primary": "#bac7e4",
+                "on-background": "#1a1c1c",
+                "primary-container": "#152238",
+                "gold": "#C5A059"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "container-max": "1280px",
+                "section-padding-v": "120px",
+                "gutter": "24px",
+                "unit": "8px",
+                "section-padding-h": "24px"
+            },
+            "fontFamily": {
+                "headline-md": ["Playfair Display"],
+                "display-lg-mobile": ["Playfair Display"],
+                "title-lg": ["Inter"],
+                "body-md": ["Inter"],
+                "display-lg": ["Playfair Display"],
+                "body-lg": ["Inter"],
+                "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "title-lg": ["20px", {"lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script><meta charset="utf-8"/></head><body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-section-padding-h py-6 max-w-container-max mx-auto bg-surface border-b border-outline-variant transition-all duration-300">
+<div class="flex items-center gap-8">
+<a class="text-label-sm font-label-sm font-bold tracking-[0.3em] text-primary" href="#">WM PROPERTY</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-label-sm font-label-sm text-primary border-b border-primary pb-1 transition-all" href="#">Inicio</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Comprar</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Alquilar</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Proyectos</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Nosotros</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Blog</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contacto</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-label-sm font-label-sm cursor-pointer hover:text-primary transition-colors">ES/EN</span>
+<a class="bg-primary text-on-primary px-6 py-3 text-label-sm font-label-sm transition-all hover:opacity-90" href="https://wa.me/34000000000">Hablar por WhatsApp</a>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[90vh] w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, wide-angle photograph of a prestigious, newly renovated luxury apartment in Madrid's Salamanca district. The interior features herringbone oak flooring, high ceilings with ornate crown molding, and large floor-to-ceiling windows letting in soft golden hour light. The furniture is minimalist and high-end, with a palette of cream, navy blue, and brass accents. The atmosphere is sophisticated, airy, and exclusive, embodying sober luxury." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvARTvCLW6UCwgXkAqZT0UR3YM8OS8bMtY2GTRnh_s0e6ZEwagykmBC6G8yvV_I_moNId9c3siWJcs4j93-iojIzX3JRLF1Fq3cHgcBY_CHB7Co9B0Tj48d7gALifGcJt6Fv1dFWVsLXv7nBNevuywKo584t5BO1y-J6QyyJXtjuQP8E3rX0LxEyi8NRGKvOeUGj82-1092lkTQYkgcnY6EHiQuWjMB2fUsnsMdvf323P4g59-nQPxNf81YmZmPgz0ZD3ur9F-knez')"></div>
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-section-padding-h w-full text-on-primary">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg mb-4 max-w-3xl">INVERSIÓN INMOBILIARIA EN MADRID</h1>
+<p class="text-body-lg font-body-lg mb-10 tracking-wide opacity-90">Chamberí · Justicia · Salamanca · Chueca · Malasaña</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-on-primary text-primary px-10 py-5 text-label-sm font-label-sm tracking-widest transition-all hover:bg-surface">QUIERO INVERTIR</button>
+<button class="border border-on-primary text-on-primary px-10 py-5 text-label-sm font-label-sm tracking-widest transition-all hover:bg-on-primary hover:text-primary">CONOCE MÁS</button>
+</div>
+</div>
+</section>
+<!-- Savills Quote -->
+<section class="py-section-padding-v px-section-padding-h max-w-container-max mx-auto text-center">
+<div class="max-w-4xl mx-auto">
+<span class="text-label-sm font-label-sm text-outline mb-6 block tracking-widest uppercase">Mercado Prime 2026</span>
+<blockquote class="text-headline-md font-headline-md italic text-primary leading-relaxed">
+                "Madrid triplica el ritmo de crecimiento global previsto para la vivienda prime en 2026, consolidándose como el refugio de inversión más sólido de Europa."
+            </blockquote>
+<cite class="mt-8 block font-label-sm text-label-sm not-italic tracking-wider text-on-surface-variant">— SAVILLS GLOBAL RESEARCH</cite>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-section-padding-v bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-section-padding-h">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col items-center text-center p-8 group">
+<span class="material-symbols-outlined text-gold text-4xl mb-4 group-hover:scale-110 transition-transform">trending_up</span>
+<h3 class="text-title-lg font-title-lg mb-2">Demanda Creciente</h3>
+<p class="text-body-md text-on-surface-variant">Interés récord de inversores latinoamericanos y europeos en el centro histórico.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 group">
+<span class="material-symbols-outlined text-gold text-4xl mb-4 group-hover:scale-110 transition-transform">lock</span>
+<h3 class="text-title-lg font-title-lg mb-2">Oferta Insuficiente</h3>
+<p class="text-body-md text-on-surface-variant">Escasez crítica de producto reformado de alta calidad en barrios exclusivos.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 group">
+<span class="material-symbols-outlined text-gold text-4xl mb-4 group-hover:scale-110 transition-transform">payments</span>
+<h3 class="text-title-lg font-title-lg mb-2">Alquileres en Aumento</h3>
+<p class="text-body-md text-on-surface-variant">Incremento sostenido de rentabilidades medias en activos de lujo.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 group">
+<span class="material-symbols-outlined text-gold text-4xl mb-4 group-hover:scale-110 transition-transform">public</span>
+<h3 class="text-title-lg font-title-lg mb-2">Atractivo Internacional</h3>
+<p class="text-body-md text-on-surface-variant">Madrid como nuevo 'hub' de estilo de vida y negocios global.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How we do it - Timeline -->
+<section class="py-section-padding-v max-w-container-max mx-auto px-section-padding-h">
+<div class="text-center mb-20">
+<h2 class="text-headline-md font-headline-md text-primary mb-4">¿Cómo lo hacemos?</h2>
+<div class="w-12 h-1 bg-gold mx-auto"></div>
+</div>
+<div class="relative">
+<!-- Central Line -->
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant hidden md:block"></div>
+<div class="space-y-24">
+<!-- Step 1 -->
+<div class="flex flex-col md:flex-row items-center gap-12 md:gap-0">
+<div class="md:w-1/2 md:pr-16 text-right">
+<span class="text-label-sm font-label-sm text-gold tracking-widest mb-2 block">01</span>
+<h4 class="text-title-lg font-title-lg mb-3">Expectativas</h4>
+<p class="text-body-md text-on-surface-variant">Definimos sus objetivos de rentabilidad y perfil de riesgo en una primera consultoría estratégica.</p>
+</div>
+<div class="relative z-10 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">handshake</span>
+</div>
+<div class="md:w-1/2 md:pl-16"></div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-0">
+<div class="md:w-1/2 md:pl-16 text-left">
+<span class="text-label-sm font-label-sm text-gold tracking-widest mb-2 block">02</span>
+<h4 class="text-title-lg font-title-lg mb-3">Inversión Ideal</h4>
+<p class="text-body-md text-on-surface-variant">Filtramos el mercado Off-Market para encontrar propiedades con el mayor potencial de revalorización.</p>
+</div>
+<div class="relative z-10 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">search</span>
+</div>
+<div class="md:w-1/2 md:pr-16"></div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col md:flex-row items-center gap-12 md:gap-0">
+<div class="md:w-1/2 md:pr-16 text-right">
+<span class="text-label-sm font-label-sm text-gold tracking-widest mb-2 block">03</span>
+<h4 class="text-title-lg font-title-lg mb-3">Gestión de Compra</h4>
+<p class="text-body-md text-on-surface-variant">Gestionamos toda la fase legal y técnica de la compra, asegurando una transacción impecable.</p>
+</div>
+<div class="relative z-10 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">gavel</span>
+</div>
+<div class="md:w-1/2 md:pl-16"></div>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-0">
+<div class="md:w-1/2 md:pl-16 text-left">
+<span class="text-label-sm font-label-sm text-gold tracking-widest mb-2 block">04</span>
+<h4 class="text-title-lg font-title-lg mb-3">Asesoramiento en Reforma</h4>
+<p class="text-body-md text-on-surface-variant">Asesoramos en la arquitectura e interiorismo para maximizar el valor del activo en el mercado.</p>
+</div>
+<div class="relative z-10 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">architecture</span>
+</div>
+<div class="md:w-1/2 md:pr-16"></div>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col md:flex-row items-center gap-12 md:gap-0">
+<div class="md:w-1/2 md:pr-16 text-right">
+<span class="text-label-sm font-label-sm text-gold tracking-widest mb-2 block">05</span>
+<h4 class="text-title-lg font-title-lg mb-3">Incorporación a Portafolio</h4>
+<p class="text-body-md text-on-surface-variant">Integramos el activo en su estructura patrimonial con una gestión fiscal eficiente.</p>
+</div>
+<div class="relative z-10 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">account_balance</span>
+</div>
+<div class="md:w-1/2 md:pl-16"></div>
+</div>
+<!-- Step 6 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-0">
+<div class="md:w-1/2 md:pl-16 text-left">
+<span class="text-label-sm font-label-sm text-gold tracking-widest mb-2 block">06</span>
+<h4 class="text-title-lg font-title-lg mb-3">Búsqueda de Inquilino</h4>
+<p class="text-body-md text-on-surface-variant">Seleccionamos al inquilino ideal para garantizar flujos de caja estables y seguros.</p>
+</div>
+<div class="relative z-10 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">key</span>
+</div>
+<div class="md:w-1/2 md:pr-16"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="py-section-padding-v bg-surface">
+<div class="max-w-container-max mx-auto px-section-padding-h">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-2">Proyectos Destacados</h2>
+<p class="text-body-md text-on-surface-variant max-w-lg">Selección de oportunidades exclusivas para inversores que buscan rentabilidad y seguridad.</p>
+</div>
+<a class="text-label-sm font-label-sm border-b border-primary pb-1 hover:text-gold hover:border-gold transition-colors uppercase tracking-widest" href="#">Ver todos los proyectos</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Project 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An architectural shot of a luxury building facade in the Chamberí neighborhood of Madrid. The building features elegant iron balconies, classic light stone walls, and large windows. The image is taken at dawn with soft, cool lighting, highlighting the timeless elegance and premium architectural details of the property." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtSEj2L0YSEL6ehEqjwBhvJxGxzhXTUgvRJ6s_H_IRzl48x67zQ-PO4rTcaBBDu_zo1U6rXDNZLsmC8geUqySfygNB8dpNNCupsoiIv1o6Ldz1A1kclUYdlLOeTLtUo2V3LEIZDUti3-tauGt27vbP370c33s9qgMcDs9iNDkoW5CClbhfvypOuWPE_wOUKT0jgMj60mkfSumH8yERn2xkvCk7IbG9EghNXMdj8rmvjDFp3eieUDYMJZzVKRlaT-cug8vTkyLoHZ49')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 flex items-center gap-1.5 text-[10px] font-label-sm tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span> Disponible
+                            </span>
+<span class="bg-surface/90 text-primary px-3 py-1 text-[10px] font-label-sm tracking-widest uppercase backdrop-blur-sm">ROI: 4.8%</span>
+</div>
+</div>
+<h3 class="text-title-lg font-title-lg mb-1">Palacio de Justicia I</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant tracking-wider uppercase">Justicia · 145 m² · 3 Hab</p>
+</div>
+<!-- Project 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A luxurious interior of a modern kitchen and living space in an upscale Madrid apartment. The design features marble countertops, dark wood cabinetry, and designer lighting fixtures. The space is immaculately clean and styled for a high-end property listing. The mood is warm and inviting, showing a blend of modern luxury and classic Madrid architecture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAV6Wa2Geb7a4_-TWXUa4gfHSOzL_U8pcV9dQ2olRYMVeePfFwEL0d5F9z590CdQof4-t6HKNjcsxBDCHRtcrd7XjSWbsa_fs6qkpBTnZ201YdRhNxWWF0wVlQVK6rrSlBd9la4VArQ1-nZGzfxfcu-ntQy2hKriSDzuyhEzWFDMI8dfd2Bdhx8gqcmnoIilg2yuRnzkEXDjrVwuOFBTyCF_218sgPIKupX59ZWiekzmc6Cb6WkdD1SZgM6yP3NfStEOa4WDafD5Wat')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-gold text-on-tertiary px-3 py-1 flex items-center gap-1.5 text-[10px] font-label-sm tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary"></span> Reservado
+                            </span>
+<span class="bg-surface/90 text-primary px-3 py-1 text-[10px] font-label-sm tracking-widest uppercase backdrop-blur-sm">ROI: 5.2%</span>
+</div>
+</div>
+<h3 class="text-title-lg font-title-lg mb-1">Residencial Velázquez</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant tracking-wider uppercase">Salamanca · 210 m² · 4 Hab</p>
+</div>
+<!-- Project 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully designed master bedroom in a luxury Madrid residence. The room features a large bed with high-thread-count linens in neutral tones, a minimalist headboard, and soft ambient lighting from designer bedside lamps. A large window overlooks a quiet street in the Almagro neighborhood. The aesthetic is serene, premium, and sophisticated." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAt-_e3L9xvCJRPrZW-0zDMbqLUIciiqyBXFSy_FjtFI-LJOiiU1yx1DiDeXvSPzFH-C36qoI3afB2vGrJZrKvTLNhpxGuivizszz3YiAOamkMi1S-49Q7V1gRWg_XIUzegi9khQiHselNUKJQpSEFT1F8XFI4A-uUyJ0b1Gpx-TsgFKgTR-4_I71jEvZThQScAriDTzshkuvVglbdbO4DuqyLrIZA96XXBvm-gGl1NtcKiIYb5aqBDsUcRzmJsyFEcYN5l9fA4iNGg')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-outline-variant text-on-surface-variant px-3 py-1 flex items-center gap-1.5 text-[10px] font-label-sm tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span> Vendido
+                            </span>
+<span class="bg-surface/90 text-primary px-3 py-1 text-[10px] font-label-sm tracking-widest uppercase backdrop-blur-sm">ROI: 4.5%</span>
+</div>
+</div>
+<h3 class="text-title-lg font-title-lg mb-1">Almagro Heritage</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant tracking-wider uppercase">Chamberí · 120 m² · 2 Hab</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-padding-v px-section-padding-h max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-headline-md font-headline-md text-primary">Lo que dicen nuestros inversores</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface p-10 border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex text-gold mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md italic text-on-surface-variant mb-8">"Su capacidad para encontrar activos Off-Market es impresionante. El proceso de reforma fue transparente y los resultados superaron nuestras expectativas de rentabilidad."</p>
+</div>
+<div>
+<p class="font-title-lg text-primary">R. Hoffmann</p>
+<p class="text-label-sm font-label-sm text-outline tracking-widest uppercase">Inversor Internacional</p>
+</div>
+</div>
+<div class="bg-surface p-10 border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex text-gold mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md italic text-on-surface-variant mb-8">"Lo que más valoro es su honestidad. No intentan venderte cualquier cosa, sino que buscan realmente la mejor opción para tu perfil financiero. Muy profesionales."</p>
+</div>
+<div>
+<p class="font-title-lg text-primary">M. Sanchez</p>
+<p class="text-label-sm font-label-sm text-outline tracking-widest uppercase">Family Office</p>
+</div>
+</div>
+<div class="bg-surface p-10 border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex text-gold mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md italic text-on-surface-variant mb-8">"La gestión 360 nos ha permitido invertir en Madrid desde el extranjero con total tranquilidad. Ellos se encargan de absolutamente todo."</p>
+</div>
+<div>
+<p class="font-title-lg text-primary">J. Cavalcanti</p>
+<p class="text-label-sm font-label-sm text-outline tracking-widest uppercase">Inversor Privado</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Summary Section -->
+<section class="py-section-padding-v bg-primary-container text-on-primary">
+<div class="max-w-container-max mx-auto px-section-padding-h flex flex-col md:flex-row items-center gap-20">
+<div class="md:w-1/2">
+<span class="text-label-sm font-label-sm text-gold tracking-widest mb-4 block uppercase">Nuestra Misión</span>
+<h2 class="text-display-lg-mobile md:text-headline-md font-headline-md mb-6">En WM Property conectamos inversores internacionales con el corazón de Madrid.</h2>
+<p class="text-body-lg font-body-lg opacity-80 mb-10 leading-relaxed">Combinamos un profundo conocimiento del mercado local con una visión financiera global. Nuestro equipo multidisciplinar garantiza que cada inversión no sea solo un activo, sino un legado.</p>
+<button class="border border-gold text-gold px-10 py-5 text-label-sm font-label-sm tracking-widest transition-all hover:bg-gold hover:text-primary">CONOCE AL EQUIPO</button>
+</div>
+<div class="md:w-1/2 relative">
+<div class="aspect-[4/3] w-full bg-cover bg-center" data-alt="A professional portrait of the WM Property team in a sophisticated office setting in Madrid. Two men and one woman are standing confidently, dressed in high-end business attire. The office behind them is minimalist with glass walls and views of the Madrid skyline. The lighting is bright and professional, conveying trust, expertise, and high-net-worth service excellence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmkb3tfTT8idL3_2MeBdVco-jkzwfVbld11V3UsU04JS5oEiFE9N9VgmGyXFRsheFEN3q4n1COLduQjE_SvbLrRhIo_zr65xTN4lIowaGi0antx-84M7MtWS0I5GlZMiYX9le5-uAKWeub0G_91rx44BhuD4LgT22xRzy261AEe7dGDDg8jLzj6aHON6TZLjN_MCOVPCXf0ggB4VXoLgTVvb6mL3Pxe8UFA2vWiTX3wlYZvzOp453vlUbjUvAcHZVhsAzFP4-7PrC7')"></div>
+<div class="absolute -bottom-6 -left-6 bg-gold p-8 hidden md:block">
+<p class="text-display-lg-mobile font-headline-md leading-none mb-1">15+</p>
+<p class="text-label-sm font-label-sm uppercase tracking-wider">Años de experiencia</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form & Info -->
+<section class="py-section-padding-v max-w-container-max mx-auto px-section-padding-h">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-6">Empiece su viaje de inversión</h2>
+<p class="text-body-md text-on-surface-variant mb-12">Complete el formulario y uno de nuestros asesores senior se pondrá en contacto con usted en menos de 24 horas.</p>
+<form class="space-y-8">
+<div>
+<label class="block text-label-sm font-label-sm mb-2 uppercase tracking-wider">Nombre Completo</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-4" placeholder="Su nombre..." type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm mb-2 uppercase tracking-wider">Correo Electrónico</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-4" placeholder="email@ejemplo.com" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm mb-2 uppercase tracking-wider">¿En qué zona está interesado?</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-4">
+<option>Salamanca</option>
+<option>Chamberí</option>
+<option>Justicia</option>
+<option>Otras zonas</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 text-label-sm font-label-sm tracking-widest transition-all hover:opacity-90">ENVIAR SOLICITUD</button>
+</form>
+</div>
+<div class="space-y-12 md:pl-12">
+<div>
+<h4 class="text-label-sm font-label-sm text-gold tracking-widest uppercase mb-4">Contacto Directo</h4>
+<p class="text-title-lg font-title-lg text-primary">+34 91 000 00 00</p>
+<p class="text-title-lg font-title-lg text-primary">invest@wmproperty.es</p>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm text-gold tracking-widest uppercase mb-4">Nuestra Oficina</h4>
+<p class="text-body-lg text-primary">Calle de Claudio Coello, 124<br/>Barrio de Salamanca, Madrid, España</p>
+</div>
+<div class="h-64 bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="A minimalist map view showing the upscale Salamanca district of Madrid, focusing on Claudio Coello street. The map is designed with a premium, monochromatic aesthetic, using dark navy and gold tones to mark the office location. The style is clean and architectural, avoiding clutter to maintain the brand's sober luxury identity." data-location="Madrid" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANR3leN0hgBJ7DJK3hIYtcOmcYmxbITHzTDG80xn7uB_pqB0GJR07lfSQq2WwTXAfTieYOXUfpTlZFHOjBVcHxkwhO5ypMAsSxSk8KWzT81EY0LpaxcOnCj_Fu1W5wEScjN2Tw7yqI8EDrzdgtGBQBJmiIMnHPPHOzEc-LC9sCVNWpMbVONSOEVXOPpHDrG_hjU71QoC62Aqc9K-gjG-3FbrzZ0giFbh41lL4UyWGxIW4v40z5EeajSxlXoxUGrIOTMk6DlKS-BWIu')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary py-section-padding-v border-t border-white/10">
+<div class="max-w-container-max mx-auto px-section-padding-h grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div>
+<p class="text-title-lg font-headline-md tracking-[0.2em] mb-8">WM PROPERTY</p>
+<p class="text-body-md text-surface-variant max-w-xs mb-8">Boutique inmobiliaria especializada en la gestión patrimonial e inversión prime en el centro de Madrid.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-title-lg font-title-lg mb-8">Menú</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Inicio</a></li>
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Comprar</a></li>
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Alquilar</a></li>
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Invierte con nosotros</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-title-lg font-title-lg mb-8">Servicios</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Personal Shopper</a></li>
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Interiorismo</a></li>
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Gestión de Activos</a></li>
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Consultoría Fiscal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-title-lg font-title-lg mb-8">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Aviso Legal</a></li>
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Política de Privacidad</a></li>
+<li><a class="text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Política de Cookies</a></li>
+</ul>
+<p class="mt-12 text-label-sm font-label-sm text-outline-variant">© 2024 WM PROPERTY. Madrid, España.</p>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<div class="fixed bottom-8 right-8 z-50">
+<a class="bg-primary text-on-primary p-4 rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all duration-300" href="https://wa.me/34000000000">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</div>
+<script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.add('py-4');
+                header.classList.remove('py-6');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('py-6');
+                header.classList.remove('py-4');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WM Property | Detalle de Alquiler Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#261900",
+                    "on-secondary-container": "#636360",
+                    "surface-container": "#eeeeee",
+                    "primary": "#000b21",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#c5c6cd",
+                    "outline": "#75777e",
+                    "secondary-fixed-dim": "#c8c6c3",
+                    "on-background": "#1a1c1c",
+                    "primary-fixed-dim": "#bac7e4",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "tertiary-fixed": "#ffdea5",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#474745",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-high": "#e8e8e8",
+                    "secondary-container": "#e1dfdc",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#120a00",
+                    "on-surface-variant": "#44474d",
+                    "on-primary-container": "#7d89a4",
+                    "surface": "#f9f9f9",
+                    "inverse-surface": "#2f3131",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#bac7e4",
+                    "error-container": "#ffdad6",
+                    "secondary": "#5f5e5c",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-primary-fixed-variant": "#3a475f",
+                    "surface-dim": "#dadada",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-low": "#f3f3f3",
+                    "primary-container": "#152238",
+                    "background": "#f9f9f9",
+                    "secondary-fixed": "#e4e2df",
+                    "surface-bright": "#f9f9f9",
+                    "primary-fixed": "#d7e3ff",
+                    "on-secondary-fixed": "#1b1c1a",
+                    "surface-tint": "#525f78",
+                    "on-surface": "#1a1c1c",
+                    "on-primary-fixed": "#0e1c31",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#a68440",
+                    "tertiary-container": "#2e1f00",
+                    "surface-container-highest": "#e2e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "section-padding-v": "120px",
+                    "section-padding-h": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                    "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                    "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "title-lg": ["20px", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                    "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                    "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .luxury-shadow {
+            box-shadow: 0 10px 30px -15px rgba(0, 11, 33, 0.08);
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f9f9f9; }
+        ::-webkit-scrollbar-thumb { background: #000b21; border-radius: 0px; }
+        
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 300px);
+            gap: 12px;
+        }
+        .bento-item-1 { grid-column: span 2; grid-row: span 2; }
+        .bento-item-2 { grid-column: span 2; grid-row: span 1; }
+        .bento-item-3 { grid-column: span 1; grid-row: span 1; }
+        .bento-item-4 { grid-column: span 1; grid-row: span 1; }
+
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .bento-item-1, .bento-item-2, .bento-item-3, .bento-item-4 { grid-column: span 1; grid-row: span 1; height: 300px; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-primary-container border-b border-outline-variant dark:border-on-primary-fixed-variant docked full-width top-0 sticky z-50 h-20 flex items-center">
+<nav class="flex justify-between items-center w-full px-section-padding-h max-w-container-max mx-auto h-20">
+<div class="text-title-lg font-title-lg font-bold tracking-tighter text-primary dark:text-on-primary-container">
+                WM Property
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1" href="#">Propiedades</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Proyectos</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Invertir</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Nosotros</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="hidden lg:block text-label-sm font-label-sm text-on-surface-variant cursor-pointer">ES/EN</span>
+<button class="bg-primary text-on-primary px-6 py-3 font-label-sm text-label-sm tracking-widest hover:opacity-90 transition-all uppercase">
+                    Hablar por WhatsApp
+                </button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section & Bento Gallery -->
+<section class="max-w-container-max mx-auto px-section-padding-h pt-16">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase">Disponible — Alquiler de Temporada</span>
+</div>
+<h1 class="font-display-lg text-display-lg md:text-display-lg leading-tight mb-4">Ático de Lujo en Chamberí con Terraza Privada</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Un refugio arquitectónico diseñado para estancias exclusivas, combinando elegancia clásica con comodidades contemporáneas en el corazón de Madrid.</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline uppercase mb-1">Precio Mensual</span>
+<span class="font-headline-md text-headline-md text-primary">6.500 €</span>
+</div>
+</div>
+<div class="bento-grid">
+<div class="bento-item-1 relative overflow-hidden group cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic, wide-angle shot of a luxurious Madrid penthouse living room during the golden hour. The space features floor-to-ceiling windows, minimalist mid-century modern furniture in deep navy and off-white, and a curated selection of contemporary art. High-key natural lighting illuminates the herringbone oak floors and architectural crown molding, creating a prestigious and sober luxury atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjTwE7iQZgHT23Kputhpy30te9R6P5Wpv-B7HY3-0Yd0tcCAIUGxwVHasuYqmru7qFgXFeN4F69zXAxPV5RU6FdeAQ9T6GD3RJT5afEWsPOSOkjpYqVqTqd54EmZynAqMixLnI7GEluYfe3VvlGH4_nFyYQUIxd6a6EwjmCsCEDKQZbXMygjOSx11pNsoecvGW2UBQlrrYtVyr8hvcG4O98dYKMUAT2aDWzxSvkwMwjD82SfweeWCQQRGgzW8PDchqWYIfakkL-D57')"></div>
+</div>
+<div class="bento-item-2 relative overflow-hidden group cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a state-of-the-art designer kitchen in a high-end Madrid apartment. Matte black cabinetry contrasts with a monolithic white Calacatta marble island. The lighting is soft and focused, highlighting professional-grade appliances and a minimalist aesthetic. The overall mood is architectural, clean, and exclusively modern, following a premium editorial design style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpzBgvpDcsG5rTyBg9UpjXKvVvDVQ4BsWc7AlPvu6OQl--QTGScZSojLe6trJc7U2Wi50EqJMPvOQYTLdmF4AqBjGsjwTRO3F4JmJ_M1xURFxwE45cSwtP7ysS0M93_bhpGvcF44zHFQ9tGTVX0IqdlB6jsKgsnQsa7V8vLSMc-saIpibeuUPF_ViRv4-LEKcFdXxfTF0Dxb9W7ViuZX9d_56riKUDqYpELAJqUT5PEhLV9BFesuouUjJjH4Tv3CjZ0ZDtJGmy6nNP')"></div>
+</div>
+<div class="bento-item-3 relative overflow-hidden group cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A serene master bedroom suite with a king-sized bed dressed in premium off-white linens. Large windows look out onto a classic Madrid street with ornate balconies. The room is styled with restraint, featuring a soft Deep Navy accent wall and architectural lighting. The image captures a sense of quiet confidence and global permanence through a minimalist lens." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBo7yCZiR-DI0xGAJvSpdne9dYqBP5NZkt8vX3RWMZ75WB9j3L27SfobnChyqo1ycfkgK0G2J5VqsSeWP0FxRTdpY19qLOF8HKD7Hm0XUwSUpg57jmII_Od-hasDIkYq0OEsBZmf95n7LZ2u7CRIlpZqyvm0wVIPxGoqyu5cG2R7HE5WPBtU1Vw3YeRGm1Igo5kP65PT8VFDkwbWJeHQ8a1FquhvuBx7MqGtLVE9TgdW8FNXs9IYxT3IYPCm7cD71Za5xpVBovXgSaG')"></div>
+</div>
+<div class="bento-item-4 relative overflow-hidden group cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An expansive private terrace overlooking the Madrid skyline at dusk. Modern outdoor lounge furniture is arranged around a low-profile fire pit. The lighting is moody and sophisticated, with warm glows contrasting against the deep blue twilight sky. The image emphasizes exclusivity and architectural precision, framed within a high-net-worth lifestyle context." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsxC0Qedkfv4FnlLNTfhUaOM3n4rlr0JlBuyQB4GA_At6QtcMHe1QFwQeewRnTBRTnp9fHmxS_Y-mlBCe1zCt6FUdxmO8_VM3DYKJaur--tyzxjBVdbddcLnbUJgnktq8j98KXn6pkaCtmiFbH678cBsZteSH0d9-kZAhFvRHQqcFm3fbZejmUlc7uw_hmvIvG3_WXBk1Yh3x0KGdQ65AMi-FGV1vOWIYT1hzg8pgUdSEZgQx6puAQ_N8LJVjrLM1KloAag0s7fEC5')"></div>
+</div>
+</div>
+</section>
+<!-- Specifications Strip -->
+<section class="max-w-container-max mx-auto px-section-padding-h py-12 border-b border-outline-variant">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary scale-110">straighten</span>
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase">Superficie</p>
+<p class="font-title-lg text-title-lg">185 m²</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary scale-110">bed</span>
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase">Habitaciones</p>
+<p class="font-title-lg text-title-lg">3</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary scale-110">bathtub</span>
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase">Baños</p>
+<p class="font-title-lg text-title-lg">3.5</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary scale-110">calendar_today</span>
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase">Estancia Mínima</p>
+<p class="font-title-lg text-title-lg">32 Días</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Content & Form Section -->
+<section class="max-w-container-max mx-auto px-section-padding-h py-section-padding-v grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Details Column -->
+<div class="lg:col-span-7 space-y-16">
+<div>
+<h2 class="font-headline-md text-headline-md mb-8">Descripción de la Propiedad</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
+                        Ubicado en uno de los distritos más prestigiosos de Madrid, este ático representa la cumbre del lujo residencial. Reformado integralmente por un estudio de arquitectura de renombre, cada detalle ha sido curado para ofrecer una experiencia de vida sin igual.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        La propiedad cuenta con un salón de doble altura, una cocina gourmet totalmente equipada y una terraza de 45m² orientada al sur, ideal para cenas privadas bajo las estrellas de Madrid.
+                    </p>
+</div>
+<div class="bg-surface-container-low p-10 border-l-4 border-primary">
+<h3 class="font-title-lg text-title-lg mb-4">Condiciones de Alquiler</h3>
+<p class="font-body-md text-body-md text-primary font-bold mb-4">Contrato de arrendamiento de temporada según LAU — uso distinto al de vivienda habitual.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Destinado a profesionales, expatriados o estancias temporales justificadas. El contrato no contempla el uso como residencia permanente del arrendatario.</p>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg mb-8 uppercase tracking-widest border-b border-outline-variant pb-2">Servicios Incluidos</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Suministros incluidos (hasta 250€/mes)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Conexión WiFi de alta velocidad</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Mobiliario de diseño y menaje completo</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Limpieza semanal con cambio de textil</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Servicio de conserjería 24/7</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Mantenimiento técnico prioritario</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Sticky Form -->
+<div class="lg:col-span-5">
+<div class="sticky top-28 bg-surface-container-lowest p-8 luxury-shadow border border-outline-variant">
+<h3 class="font-headline-md text-headline-md mb-2">Solicitar Información</h3>
+<p class="font-body-md text-body-md text-outline mb-8">Déjenos sus datos y uno de nuestros asesores le contactará para coordinar una visita privada.</p>
+<form class="space-y-6">
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase block mb-1">Nombre Completo</label>
+<input class="w-full border-b border-outline-variant focus:border-primary border-t-0 border-l-0 border-r-0 bg-transparent px-0 py-3 focus:ring-0 outline-none transition-all font-body-md" placeholder="Nombre y apellidos" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase block mb-1">Correo Electrónico</label>
+<input class="w-full border-b border-outline-variant focus:border-primary border-t-0 border-l-0 border-r-0 bg-transparent px-0 py-3 focus:ring-0 outline-none transition-all font-body-md" placeholder="ejemplo@email.com" type="email"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase block mb-1">Teléfono</label>
+<input class="w-full border-b border-outline-variant focus:border-primary border-t-0 border-l-0 border-r-0 bg-transparent px-0 py-3 focus:ring-0 outline-none transition-all font-body-md" placeholder="+34 000 000 000" type="tel"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase block mb-1">Fecha de entrada deseada</label>
+<input class="w-full border-b border-outline-variant focus:border-primary border-t-0 border-l-0 border-r-0 bg-transparent px-0 py-3 focus:ring-0 outline-none transition-all font-body-md" type="date"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase block mb-1">Mensaje (Opcional)</label>
+<textarea class="w-full border-b border-outline-variant focus:border-primary border-t-0 border-l-0 border-r-0 bg-transparent px-0 py-3 focus:ring-0 outline-none transition-all font-body-md resize-none" placeholder="¿Desea comentarnos algo más?" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 font-label-sm text-label-sm tracking-[0.2em] uppercase hover:opacity-90 transition-all" type="submit">
+                            Enviar Solicitud
+                        </button>
+</form>
+<div class="mt-8 flex items-center justify-center gap-3 text-outline font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Privacidad Garantizada</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Similar Properties Section -->
+<section class="bg-surface-container-low py-section-padding-v">
+<div class="max-w-container-max mx-auto px-section-padding-h">
+<div class="flex justify-between items-center mb-12">
+<h2 class="font-headline-md text-headline-md">Propiedades Similares en Alquiler</h2>
+<a class="font-label-sm text-label-sm text-primary uppercase border-b-2 border-primary pb-1" href="#">Ver todos los listados</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Property Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Exquisite modern apartment in Madrid's Salamanca district. The image shows a bright, minimalist interior with high ceilings and restored period details. Soft daylight filters through large wooden shutters. The aesthetic is clean and premium, perfectly aligned with a luxury real estate magazine style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCpBcl2Fr10Ioxu96t3EWrIJBKqLYHgrorRFVWCDOKybNopG1qquKvNyCYsAjUUFdoKupumSrykuksIUtuhWAqQTu6Derb9PbNcYTp15KcwGTLdd1oafRs8ABivpcL_ZGQyXcgD91P7nDBPCpYQ2H4euhJDfkVmMMWqDEoeSwNBezG60uPN1TUBnQIgucUZMsdrLPzE82yBP4HgEMTOoAYJp1k5Mec5r-UR5VmaTuXy_5txFjFq5T7YI_qu4bPKf7kGViQ6lMldSP4')"></div>
+<div class="absolute top-4 left-4 bg-primary/90 text-on-primary px-3 py-1 font-label-sm text-[10px] tracking-widest uppercase">Barrio de Salamanca</div>
+</div>
+<h4 class="font-title-lg text-title-lg mb-2">Residencia Elegante en Velázquez</h4>
+<div class="flex gap-4 text-outline font-label-sm text-label-sm mb-4">
+<span>160 m²</span>
+<span>•</span>
+<span>2 Dormitorios</span>
+</div>
+<p class="font-headline-md text-[24px] text-primary">5.200 € / mes</p>
+</div>
+<!-- Property Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Sophisticated contemporary living space in a luxury building in Madrid. The decor features a palette of charcoal, warm wood, and brushed brass accents. Architectural lighting creates a dramatic but inviting atmosphere. High-end photography style with shallow depth of field, emphasizing texture and quality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMDPZ-yMVhA5_e6Gb-u6OiuNzvbRsCGd9R7VwM4Z2j1EBx72Sh9p1pBPXd6-3q9VvyrY_Bm1gP_eHMwVn7pX6-vo7UIe8LYYxYfmPYhoMTot2TCaUP_GsUsCX44r9fLIbqN6cbHf-IWmtzsunBK4o4zadOQUb4dLxfED5VKeYYMqQnt75CmjtFrlKgJ6OvGUqI09QZesJ4J-10njhogjNxD4WQy8bEaRXbCfYjDbEuoNkkLQiakZEOChmubk1866vv9bEw7nt9pbGL')"></div>
+<div class="absolute top-4 left-4 bg-primary/90 text-on-primary px-3 py-1 font-label-sm text-[10px] tracking-widest uppercase">Justicia</div>
+</div>
+<h4 class="font-title-lg text-title-lg mb-2">Loft de Diseño en Palacio</h4>
+<div class="flex gap-4 text-outline font-label-sm text-label-sm mb-4">
+<span>120 m²</span>
+<span>•</span>
+<span>1 Dormitorio</span>
+</div>
+<p class="font-headline-md text-[24px] text-primary">3.900 € / mes</p>
+</div>
+<!-- Property Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Luxury duplex penthouse with a stunning rooftop terrace in central Madrid. The image captures the transition between a high-end interior and the outdoor lounge area. Warm, golden sunset light fills the frame, suggesting a life of exclusivity and comfort. Minimalist framing and rich tonal depth." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeR_2x8Y-aIzi6vGv4zA-e_OhzW5wAYrsyYS9sIhFbGnIlm8S94knjYso2bO0WcC8AVBA7_p38pO7EBdJYcuT0QS882r_Chs36XLaBeLzDYc7Dx3lY4acAX5CxX0o29F_FgPx8Yt8BZ77H2MJqh4E9xc3BaZhN5BdH6owfLSyrvEuKXrl6dSAQNOKGasZVJ9BeFXksYUWU4U63mu572_C5H-jorQJRV8eJGdu2rdnzY1hfndPZnTW6Hd7SV7FKWr718MBL7ZrE9LxA')"></div>
+<div class="absolute top-4 left-4 bg-primary/90 text-on-primary px-3 py-1 font-label-sm text-[10px] tracking-widest uppercase">Almagro</div>
+</div>
+<h4 class="font-title-lg text-title-lg mb-2">Dúplex de Lujo en Chamberí</h4>
+<div class="flex gap-4 text-outline font-label-sm text-label-sm mb-4">
+<span>210 m²</span>
+<span>•</span>
+<span>4 Dormitorios</span>
+</div>
+<p class="font-headline-md text-[24px] text-primary">7.800 € / mes</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SideNavBar (WhatsApp Floating) -->
+<aside class="fixed bottom-8 right-8 z-50 flex items-center justify-center">
+<a class="bg-tertiary-container dark:bg-tertiary-fixed text-on-tertiary-container dark:text-on-tertiary-fixed rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-300 active:scale-95 group relative" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+<div class="absolute right-16 bg-white px-4 py-2 luxury-shadow opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-outline-variant pointer-events-none">
+<p class="font-label-sm text-label-sm text-primary">Habla con nosotros</p>
+</div>
+</a>
+</aside>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-primary full-width border-t border-on-primary-fixed-variant">
+<div class="w-full py-section-padding-v px-section-padding-h max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="space-y-6">
+<div class="text-headline-md font-headline-md text-on-primary dark:text-primary">WM Property</div>
+<p class="font-body-md text-body-md opacity-70">Consultoría inmobiliaria de alto nivel especializada en el mercado de lujo de Madrid.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest mb-2">Navegación</h5>
+<a class="font-body-md text-body-md text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Propiedades</a>
+<a class="font-body-md text-body-md text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Proyectos</a>
+<a class="font-body-md text-body-md text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Invertir</a>
+<a class="font-body-md text-body-md text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Nosotros</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest mb-2">Legal</h5>
+<a class="font-label-sm text-label-sm text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Aviso Legal</a>
+<a class="font-label-sm text-label-sm text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Política de Privacidad</a>
+<a class="font-label-sm text-label-sm text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Cookies</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest mb-2">Contacto</h5>
+<p class="font-body-md text-body-md opacity-70">Calle Serrano 100, Madrid</p>
+<p class="font-body-md text-body-md opacity-70">+34 912 345 678</p>
+<p class="font-body-md text-body-md opacity-70">info@wmproperty.madrid</p>
+</div>
+</div>
+<div class="w-full max-w-container-max mx-auto px-section-padding-h py-8 border-t border-on-primary-fixed-variant opacity-50 flex flex-col md:flex-row justify-between gap-4">
+<p class="font-label-sm text-label-sm">© 2024 WM Property Madrid. Todos los derechos reservados.</p>
+<div class="flex gap-6 font-label-sm text-label-sm">
+<a class="hover:underline" href="#">LinkedIn</a>
+<a class="hover:underline" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for the form fields
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').classList.add('text-primary');
+            });
+            input.addEventListener('blur', () => {
+                if (!input.value) {
+                    input.parentElement.querySelector('label').classList.remove('text-primary');
+                }
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Comprar | WM Property Madrid</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#261900",
+                    "on-secondary-container": "#636360",
+                    "surface-container": "#eeeeee",
+                    "primary": "#000b21",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#c5c6cd",
+                    "outline": "#75777e",
+                    "secondary-fixed-dim": "#c8c6c3",
+                    "on-background": "#1a1c1c",
+                    "primary-fixed-dim": "#bac7e4",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "tertiary-fixed": "#ffdea5",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#474745",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-high": "#e8e8e8",
+                    "secondary-container": "#e1dfdc",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#120a00",
+                    "on-surface-variant": "#44474d",
+                    "on-primary-container": "#7d89a4",
+                    "surface": "#f9f9f9",
+                    "inverse-surface": "#2f3131",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#bac7e4",
+                    "error-container": "#ffdad6",
+                    "secondary": "#5f5e5c",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-primary-fixed-variant": "#3a475f",
+                    "surface-dim": "#dadada",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-low": "#f3f3f3",
+                    "primary-container": "#152238",
+                    "background": "#f9f9f9",
+                    "secondary-fixed": "#e4e2df",
+                    "surface-bright": "#f9f9f9",
+                    "primary-fixed": "#d7e3ff",
+                    "on-secondary-fixed": "#1b1c1a",
+                    "surface-tint": "#525f78",
+                    "on-surface": "#1a1c1c",
+                    "on-primary-fixed": "#0e1c31",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#a68440",
+                    "tertiary-container": "#2e1f00",
+                    "surface-container-highest": "#e2e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "section-padding-v": "120px",
+                    "section-padding-h": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .filter-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .image-overlay {
+            background: linear-gradient(to bottom, rgba(0, 11, 33, 0.4) 0%, rgba(0, 11, 33, 0.7) 100%);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #000b21;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-primary-container border-b border-outline-variant dark:border-on-primary-fixed-variant flex justify-between items-center w-full px-section-padding-h max-w-container-max mx-auto h-20 docked full-width top-0 sticky z-50">
+<div class="text-title-lg font-title-lg font-bold tracking-tighter text-primary dark:text-on-primary-container">
+            WM Property
+        </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 text-label-sm font-label-sm" href="#">Propiedades</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Proyectos</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Invertir</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300" href="#">Nosotros</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="text-label-sm font-label-sm text-on-surface-variant cursor-pointer">ES/EN</span>
+<button class="bg-primary text-on-primary px-6 py-2 text-label-sm font-label-sm transition-opacity hover:opacity-90">
+                Hablar por WhatsApp
+            </button>
+</div>
+</header>
+<!-- SideNavBar (Floating WhatsApp FAB) -->
+<a class="fixed bottom-8 right-8 z-50 flex items-center justify-center bg-tertiary-container dark:bg-tertiary-fixed text-on-tertiary-container dark:text-on-tertiary-fixed rounded-full w-14 h-14 shadow-md hover:scale-110 transition-transform duration-300 active:scale-95 group" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="absolute right-16 bg-primary text-on-primary px-3 py-1 text-label-sm font-label-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-sm pointer-events-none">Contacto Directo</span>
+</a>
+<main>
+<!-- Hero Banner -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="An ultra-luxurious, minimalist Madrid apartment interior with high ceilings, ornate crown molding, and large French balconies. The room is flooded with soft morning sunlight, highlighting a contemporary velvet sofa and a marble fireplace. The color palette is sophisticated off-whites and deep navy accents, reflecting a sober luxury aesthetic. High-end editorial photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyBJ4oAqYq6tgsV_rTHPEmb9XMsp3w--zRR0ROtIlCUAcj-dianjJtfQufCNIAlkWHEmfqCwk5-WR-zTMBVUkCaE1xDaxIMMnN66xFBRAiB-Ohn0qv29nSQN3RMnqHSruQhca221wm6HvCxjuA_W1ITHL0DM15FH0t1IatFZcKSo_wazgXD_IjHvCmrduJN4-HrzxDjDm4ugSiFJGmSqXDy7u9G9yCligR7d5LeZjKuven2oF7ARCOJ_bqL2jf2X75pcwR3D13h0um')"></div>
+<div class="absolute inset-0 image-overlay"></div>
+<div class="relative z-10 text-center px-section-padding-h max-w-4xl mx-auto">
+<h1 class="text-on-primary font-display-lg text-display-lg-mobile md:text-display-lg mb-4">
+                    PROPIEDADES EN VENTA EN MADRID
+                </h1>
+<p class="text-on-primary/80 font-body-lg text-body-lg max-w-2xl mx-auto">
+                    Selección exclusiva de oportunidades de inversión en Chamberí, Justicia, Salamanca, Chueca y Malasaña.
+                </p>
+</div>
+</section>
+<!-- Sticky Filter Bar -->
+<section class="sticky top-20 z-40 bg-surface-container-lowest border-b border-outline-variant py-4 px-section-padding-h">
+<div class="max-w-container-max mx-auto flex flex-wrap items-end gap-6">
+<!-- Neighborhood -->
+<div class="flex-1 min-w-[200px]">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-2">BARRIO</label>
+<select class="w-full bg-transparent border-b border-outline-variant py-2 focus:border-primary focus:ring-0 text-body-md transition-colors outline-none cursor-pointer">
+<option>Todos los barrios</option>
+<option>Chamberí</option>
+<option>Justicia</option>
+<option>Salamanca</option>
+<option>Chueca</option>
+<option>Malasaña</option>
+</select>
+</div>
+<!-- Price Range -->
+<div class="flex-1 min-w-[200px]">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-2">RANGO DE PRECIO</label>
+<select class="w-full bg-transparent border-b border-outline-variant py-2 focus:border-primary focus:ring-0 text-body-md transition-colors outline-none cursor-pointer">
+<option>Cualquier precio</option>
+<option>500.000€ - 1.000.000€</option>
+<option>1.000.000€ - 2.500.000€</option>
+<option>+ 2.500.000€</option>
+</select>
+</div>
+<!-- Rooms -->
+<div class="flex-1 min-w-[150px]">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-2">HABITACIONES</label>
+<select class="w-full bg-transparent border-b border-outline-variant py-2 focus:border-primary focus:ring-0 text-body-md transition-colors outline-none cursor-pointer">
+<option>Cualquiera</option>
+<option>1+ Hab</option>
+<option>2+ Hab</option>
+<option>3+ Hab</option>
+<option>4+ Hab</option>
+</select>
+</div>
+<!-- State -->
+<div class="flex-1 min-w-[150px]">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-2">ESTADO</label>
+<select class="w-full bg-transparent border-b border-outline-variant py-2 focus:border-primary focus:ring-0 text-body-md transition-colors outline-none cursor-pointer">
+<option>Todos</option>
+<option>Disponible</option>
+<option>Reservado</option>
+<option>Vendido</option>
+</select>
+</div>
+<!-- Actions -->
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-3 text-label-sm font-label-sm uppercase tracking-widest transition-opacity hover:opacity-90">
+                        Aplicar
+                    </button>
+<button class="border border-outline px-8 py-3 text-label-sm font-label-sm uppercase tracking-widest transition-colors hover:bg-surface-variant">
+                        Limpiar
+                    </button>
+</div>
+</div>
+</section>
+<!-- Property Grid -->
+<section class="py-section-padding-v px-section-padding-h max-w-container-max mx-auto">
+<div class="flex items-baseline justify-between mb-12">
+<h2 class="font-headline-md text-headline-md text-primary">Resultados encontrados <span class="text-outline text-title-lg ml-2">(24)</span></h2>
+<div class="flex gap-2">
+<button class="p-2 border border-outline-variant rounded-full hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+</button>
+<button class="p-2 border border-outline-variant rounded-full hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="list">list</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/5] mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="High-resolution architectural photography of a stunning penthouse living room in Chamberí, Madrid. Huge windows frame the city skyline, with designer furniture in neutral tones and dark oak flooring. The lighting is warm and cinematic, suggesting a high-end luxury lifestyle. Pristine composition following the rule of thirds." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpoWJNc_SkNFjamK9-wRF3gVDwxJ6f_aZktV2CtrPiOkajOO5JvN-qWf1J0HAFH1rY-uRR6d45pSxzG9ugh5Y4mesNwct2msGJwA8bDebDGQTC2vXHbEaehrBya73b2Q71jZIzjz3u95KHjgyyTei6AK1YDP_lKCsNjm_tGS_I7ziqvBIRENMGDBBTxCxJA4yvUPU7sqixX94s32S6mEiDnPFX4rj6dzHH2UReSkE4ncC2PwIb-wLYpGerC5tRUZhoLJ1IeniwqBWU')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 text-label-sm font-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> DISPONIBLE
+                            </span>
+</div>
+<button class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="space-y-3">
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">CHAMBERÍ · ALMAGRO</p>
+<h3 class="font-headline-md text-[24px] leading-tight text-primary group-hover:underline decoration-1 underline-offset-4">Residencia Palaciega en Almagro</h3>
+<div class="flex items-center gap-4 text-secondary text-body-md">
+<span>145 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>3 Hab</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>2 Baños</span>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant/30">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant block">PRECIO</span>
+<span class="text-title-lg font-bold text-primary">1.250.000 €</span>
+</div>
+<div class="text-right">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">RENTABILIDAD</span>
+<span class="text-title-lg font-medium text-on-tertiary-container">5.4%</span>
+</div>
+</div>
+<button class="w-full mt-4 border border-primary py-3 text-label-sm font-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">
+                            Ver propiedad
+                        </button>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/5] mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An elegant apartment interior in the Salamanca district of Madrid, featuring classic marble floors and intricate wall moldings. The space is minimalist but warm, with golden hour sunlight streaming in. Sophisticated lighting fixtures and a clean, luxury editorial aesthetic. Perfect symmetry and a sense of calm." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhIUdybfJ4p6KwZgyJgolE7ZIiU-jD3IMy58h7Oa5wwVowc1LoZ2J7jgKsWQfF5ZuzJ1HSwuWVsZqh4ntJWALIpE2rMPT4uXKLUtLns2VpNlfcUa1vM-OruXIoELNELADrPuuNWOqCswardfQEKHO9jBBPlOrD6iPPQOXDYFNeBU490Gz2G31palkoxEz0ejzLYTQATTL7f_tf77JSIf5lRvgAZUfM3Ds5H5roEthIpDkSWqeEcRj0_vzmL7sDn1eLgiq5OrYAx-MW')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 text-label-sm font-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-fixed"></span> RESERVADO
+                            </span>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">SALAMANCA · RECOLETOS</p>
+<h3 class="font-headline-md text-[24px] leading-tight text-primary group-hover:underline decoration-1 underline-offset-4">Clásico Reformado en Recoletos</h3>
+<div class="flex items-center gap-4 text-secondary text-body-md">
+<span>182 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 Hab</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>3 Baños</span>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant/30">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant block">PRECIO</span>
+<span class="text-title-lg font-bold text-primary">2.490.000 €</span>
+</div>
+<div class="text-right">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">RENTABILIDAD</span>
+<span class="text-title-lg font-medium text-on-tertiary-container">4.8%</span>
+</div>
+</div>
+<button class="w-full mt-4 border border-primary py-3 text-label-sm font-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">
+                            Ver propiedad
+                        </button>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/5] mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A modern loft-style apartment in Chueca, Madrid, featuring exposed brick walls and high-end industrial-chic finishes. The open-plan layout is bathed in soft, natural light, highlighting a designer kitchen with black matte cabinetry. The atmosphere is vibrant yet exclusive. Editorial photography with focus on material textures." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLrT7yPWp2DxImy8Ipna4kqyzLnGbVxFiUML2LcybjH7GM7L7Faw9aMqTRF6E5p5Ry1OKz9M8hr0PSgGTbYSTyWgIveZP2T_ox5UAwml9jcrrev4wkjpgc_eiJF6vWmo1CTCN_Y3pFOXsmHxDzL7OGArnUvs9P4qm3fecesZ09RBE6vdnh9MKhfjFHGbqtYP4vKz3Ua1_BhYhT_sfCJmvEff2RUDV0R-u0ESEVqSxf0DlFQuFO_ClvFePsX8y0XkqBX7P6_MdX4HpX')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 text-label-sm font-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> DISPONIBLE
+                            </span>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">JUSTICIA · CHUECA</p>
+<h3 class="font-headline-md text-[24px] leading-tight text-primary group-hover:underline decoration-1 underline-offset-4">Ático Contemporáneo con Terraza</h3>
+<div class="flex items-center gap-4 text-secondary text-body-md">
+<span>110 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>2 Hab</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>2 Baños</span>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant/30">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant block">PRECIO</span>
+<span class="text-title-lg font-bold text-primary">895.000 €</span>
+</div>
+<div class="text-right">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">RENTABILIDAD</span>
+<span class="text-title-lg font-medium text-on-tertiary-container">6.2%</span>
+</div>
+</div>
+<button class="w-full mt-4 border border-primary py-3 text-label-sm font-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">
+                            Ver propiedad
+                        </button>
+</div>
+</article>
+<!-- Additional cards repeated for grid density -->
+<!-- Card 4 (Sold Example) -->
+<article class="group cursor-not-allowed opacity-80">
+<div class="relative overflow-hidden aspect-[4/5] mb-6 grayscale">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Luxury Madrid real estate interior, showing a minimalist hallway with white walls and warm wood accents. The lighting is diffused and calm. Premium property presentation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXE-7dQQfz8q5zhmjmZQZxFhxFZsFAem2w-QcJAwnyvNK6y0QmC_6XwDbDF94yKFRURpBjdM6Bk34uO9KIokNvDYSo1q8w4O-UNss-UKOOLLYA6LAMm9ja6-01KTk8jhSuaMrSsldnU5UCfGGj1E5x8OBfAp-yitlE6sTZJjiyXe4BMSNYBLBmJnbVZjHlIwiMRxTdo7AGJJ5nE4u7dyoucYZ3oogOHLM4fkYCSfdj9ce-W1LmNoep8wcdZsKp4YVXZVmo-hTc5cq4')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-secondary text-on-secondary px-3 py-1 text-label-sm font-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-secondary"></span> VENDIDO
+                            </span>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-widest">MALASAÑA</p>
+<h3 class="font-headline-md text-[24px] leading-tight text-outline">Loft Industrial de Lujo</h3>
+<div class="flex items-center gap-4 text-outline text-body-md">
+<span>95 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>1 Hab</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>1 Baño</span>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant/30">
+<span class="text-title-lg font-bold text-outline">VENDIDO</span>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/5] mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Sophisticated Madrid apartment with dark wood floors and crisp white walls. High ceilings with ornate plaster work. Minimalist modern furniture pieces. Soft high-key lighting for a premium magazine aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWRefbscF_wtrf-oYWqywN-S6WdG_R7VpgBUOGAdUv03ftIasv94z4z8Wkzay8BX4bZg5MQ3nSF0acOz4jZR7DHeLoR8Ed9e6rsXMZOybkAyeczoGzNsvzl6SyReMp1pqy-VIG2zgV4XIPdT6blKGlwVCupuzVekg4Ukz9ko_oKytzKhG8QIok_xEitsuSfm1vTu4l7Kliw00oLYCH3kTbw1p7r9dH4q-Mh9xYFQuMCHNPhxKIq2txN4iZsu3fHFyGoikEccpeiKBI')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 text-label-sm font-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> DISPONIBLE
+                            </span>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">CHAMBERÍ · TRAFALGAR</p>
+<h3 class="font-headline-md text-[24px] leading-tight text-primary group-hover:underline decoration-1 underline-offset-4">Piso Exterior con Balcones</h3>
+<div class="flex items-center gap-4 text-secondary text-body-md">
+<span>130 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>3 Hab</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>2 Baños</span>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant/30">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant block">PRECIO</span>
+<span class="text-title-lg font-bold text-primary">1.120.000 €</span>
+</div>
+<div class="text-right">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">RENTABILIDAD</span>
+<span class="text-title-lg font-medium text-on-tertiary-container">5.1%</span>
+</div>
+</div>
+<button class="w-full mt-4 border border-primary py-3 text-label-sm font-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">
+                            Ver propiedad
+                        </button>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/5] mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Classic high-end living room in Madrid's Salamanca district. Deep blue walls with white crown molding. Large windows overlooking a tree-lined street. Minimalist high-end decor and soft natural lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDenU4nLg6tXjuDy60cVonJz3UdJjPPAWShywubniAPr41QdrNAz8zb7gfGw1LPAiUhlTcsGhNNB-eRphotzWrRkxTh1Q3l-fsGBe-DrROsmk-WUxOvC9-99z1Eh9tME11qUeRQv4wKGsxEitmZKCz64SNTFJncF9wgp168IMEMTbEbi6-K3UF2wPjyICfRQz2UNGGb6N3uXHsFQ-IGaWJUWH0iwaq8_hprIcUoOWGx7ajgi9nFVULKW70_QEXGveGDktJhjGcK20kC')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 text-label-sm font-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> DISPONIBLE
+                            </span>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">SALAMANCA · CASTELLANA</p>
+<h3 class="font-headline-md text-[24px] leading-tight text-primary group-hover:underline decoration-1 underline-offset-4">Elegancia Clásica en Castellana</h3>
+<div class="flex items-center gap-4 text-secondary text-body-md">
+<span>210 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 Hab</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 Baños</span>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant/30">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant block">PRECIO</span>
+<span class="text-title-lg font-bold text-primary">3.150.000 €</span>
+</div>
+<div class="text-right">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">RENTABILIDAD</span>
+<span class="text-title-lg font-medium text-on-tertiary-container">4.2%</span>
+</div>
+</div>
+<button class="w-full mt-4 border border-primary py-3 text-label-sm font-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">
+                            Ver propiedad
+                        </button>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-20 flex items-center justify-center gap-8">
+<button class="flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-widest text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span> Anterior
+                </button>
+<div class="flex gap-4">
+<span class="text-label-sm font-label-sm border-b-2 border-primary pb-1">01</span>
+<span class="text-label-sm font-label-sm text-outline cursor-pointer hover:text-primary">02</span>
+<span class="text-label-sm font-label-sm text-outline cursor-pointer hover:text-primary">03</span>
+</div>
+<button class="flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-widest text-primary hover:opacity-70 transition-opacity">
+                    Siguiente <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="bg-primary text-on-primary py-section-padding-v px-section-padding-h text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-md text-display-lg-mobile md:text-headline-md mb-6 italic">¿Buscas algo específico?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/70 mb-10">
+                    Déjanos tus datos y un asesor te contactará con propiedades exclusivas fuera de mercado que encajen con tu perfil de inversión.
+                </p>
+<form class="flex flex-col md:flex-row gap-4 items-end">
+<div class="flex-1 text-left w-full">
+<label class="text-label-sm font-label-sm text-on-primary/60 mb-2 block uppercase">Email corporativo</label>
+<input class="w-full bg-transparent border-b border-on-primary/30 py-3 focus:border-on-primary focus:ring-0 outline-none placeholder:text-on-primary/20" placeholder="email@empresa.com" type="email"/>
+</div>
+<button class="bg-surface-container-lowest text-primary px-12 py-4 text-label-sm font-label-sm uppercase tracking-widest hover:bg-tertiary-fixed transition-colors w-full md:w-auto">
+                        Suscribirse
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-primary w-full py-section-padding-v px-section-padding-h max-w-container-max mx-auto border-t border-on-primary-fixed-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="text-headline-md font-headline-md text-on-primary dark:text-primary mb-6">WM Property</div>
+<p class="text-body-md font-body-md text-outline-variant dark:text-on-surface-variant mb-4">
+                    Expertos en inversión inmobiliaria de lujo en el corazón de Madrid.
+                </p>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm uppercase tracking-widest mb-6 opacity-60">Barrios</h4>
+<ul class="space-y-3">
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Chamberí</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Justicia</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Salamanca</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Chueca</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm uppercase tracking-widest mb-6 opacity-60">Legal</h4>
+<ul class="space-y-3">
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Aviso Legal</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Política de Privacidad</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm uppercase tracking-widest mb-6 opacity-60">Contacto</h4>
+<ul class="space-y-3">
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">C. de Almagro, 12, Madrid</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">+34 912 345 678</a></li>
+<li><a class="text-outline-variant dark:text-on-surface-variant text-label-sm font-label-sm hover:text-tertiary-fixed-dim transition-colors" href="#">info@wmproperty.com</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-on-primary-fixed-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-label-sm font-label-sm text-outline-variant dark:text-on-surface-variant">© 2024 WM Property Madrid. Todos los derechos reservados.</div>
+<div class="flex gap-6">
+<a class="text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="text-outline-variant dark:text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined" data-icon="camera">camera</span></a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for filters
+        const selects = document.querySelectorAll('select');
+        selects.forEach(select => {
+            select.addEventListener('change', (e) => {
+                if (e.target.value !== e.target.options[0].text) {
+                    e.target.classList.add('text-primary', 'font-bold');
+                } else {
+                    e.target.classList.remove('text-primary', 'font-bold');
+                }
+            });
+        });
+
+        // Sticky header background shift on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nosotros | WM PROPERTY</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1a1c1c",
+                    "primary": "#000b21",
+                    "on-surface-variant": "#44474d",
+                    "surface-variant": "#e2e2e2",
+                    "outline": "#75777e",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#2f3131",
+                    "primary-fixed-dim": "#bac7e4",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f9f9f9",
+                    "tertiary-container": "#2e1f00",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container": "#eeeeee",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dadada",
+                    "surface-tint": "#525f78",
+                    "secondary-fixed": "#e4e2df",
+                    "on-tertiary-fixed": "#261900",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary-fixed-variant": "#474745",
+                    "on-secondary-container": "#636360",
+                    "on-primary-fixed": "#0e1c31",
+                    "background": "#f9f9f9",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f1f1f1",
+                    "tertiary": "#120a00",
+                    "on-primary-fixed-variant": "#3a475f",
+                    "tertiary-fixed": "#ffdea5",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5f5e5c",
+                    "surface-container-low": "#f3f3f3",
+                    "on-tertiary-container": "#a68440",
+                    "primary-fixed": "#d7e3ff",
+                    "surface-bright": "#f9f9f9",
+                    "outline-variant": "#c5c6cd",
+                    "secondary-fixed-dim": "#c8c6c3",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#7d89a4",
+                    "secondary-container": "#e1dfdc",
+                    "on-secondary-fixed": "#1b1c1a",
+                    "inverse-primary": "#bac7e4",
+                    "on-background": "#1a1c1c",
+                    "primary-container": "#152238"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "section-padding-v": "120px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "section-padding-h": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "title-lg": ["20px", {"lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .luxury-line {
+            height: 1px;
+            background: #E8E6E3;
+            width: 100%;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+        }
+    </style>
+</head>
+<body class="bg-surface">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-surface border-b border-outline-variant w-full">
+<nav class="flex justify-between items-center w-full px-section-padding-h py-6 max-w-container-max mx-auto">
+<div class="text-label-sm font-label-sm font-bold tracking-[0.3em] text-primary">
+                WM PROPERTY
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Comprar</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Alquilar</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Proyectos</a>
+<a class="text-label-sm font-label-sm text-primary border-b border-primary pb-1" href="#">Nosotros</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Blog</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contacto</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="text-label-sm font-label-sm text-on-surface-variant cursor-pointer hover:text-primary">ES/EN</span>
+<a class="text-label-sm font-label-sm bg-primary text-on-primary px-6 py-3 tracking-widest hover:opacity-90 transition-all uppercase" href="#">Hablar por WhatsApp</a>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-section-padding-h pt-24 pb-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<div class="md:col-span-7">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-primary mb-8 max-w-2xl">Artesanos de la Inversión Inmobiliaria.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Desde Madrid, proyectamos una visión global del mercado premium, donde la discreción y el rigor arquitectónico definen cada operación.</p>
+</div>
+<div class="md:col-span-5 text-right">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Establecidos en 2014</span>
+</div>
+</div>
+</section>
+<!-- Story & Mission: Asymmetric Layout -->
+<section class="max-w-container-max mx-auto px-section-padding-h py-section-padding-v">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="A high-end, minimalist architectural photograph of a contemporary Madrid building facade. The lighting is soft morning sun, casting gentle shadows that emphasize geometric precision. The color palette is composed of off-white stone, deep navy glass reflections, and subtle gold accents. The atmosphere is quiet, prestigious, and extremely clean, embodying the sober luxury brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBreG4Ipgepp1vGQ2X7TaYsb3klPxWnbTrB9EfDH_yhZjn2DgSoKuGsqvKVQJfACItNPOe614MQeEkTl7UY47kKIko4V9GYWpdMIxdQBjRNfnhnvd_JLJ7ZE6K7hdXHQwXDnh9KM0PQmcpE-gVkr_bCqYvOmysiAlm9Dj1ZWfSjOrLElx0oUwrXxnd5CsNp0_irsLdWuvFHgmOKYV7OaGHs-tSy3zPnNFGd63iDPsUdFYjuRm12137XQoMeLttbXFrN1fCtVlbFfrR8"/>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 flex flex-col justify-center order-1 md:order-2 mb-12 md:mb-0">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Nuestra Historia</h2>
+<div class="space-y-6 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>WM Property nació de la necesidad de elevar el estándar del asesoramiento inmobiliario en la capital española. Lo que comenzó como una boutique de inversiones privadas se ha transformado en un referente para clientes internacionales que buscan no solo metros cuadrados, sino patrimonio con valor arquitectónico y emocional.</p>
+<p>Nuestra misión es simple pero ambiciosa: actuar como el puente de confianza entre grandes oportunidades y inversores que valoran la excelencia por encima de lo convencional. No somos transaccionales; somos consultores de legado.</p>
+</div>
+<div class="mt-10 luxury-line"></div>
+</div>
+</div>
+</section>
+<!-- Our Commitment: Clean List -->
+<section class="bg-primary text-on-primary py-section-padding-v">
+<div class="max-w-container-max mx-auto px-section-padding-h">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h2 class="font-headline-md text-headline-md text-on-primary mb-8">Nuestro Compromiso</h2>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-1 gap-12">
+<div class="group border-l border-on-primary/20 pl-8 hover:border-on-primary transition-colors">
+<h3 class="font-title-lg text-title-lg mb-2">Transformando inversiones</h3>
+<p class="font-body-md text-body-md text-on-primary-container">Convertimos el capital en activos tangibles de alta rentabilidad y bajo riesgo, seleccionando activos con criterios de escasez y ubicación.</p>
+</div>
+<div class="group border-l border-on-primary/20 pl-8 hover:border-on-primary transition-colors">
+<h3 class="font-title-lg text-title-lg mb-2">Acompañamiento Profesional</h3>
+<p class="font-body-md text-body-md text-on-primary-container">Un equipo multidisciplinar de arquitectos, abogados y financieros guía cada paso de la adquisición para su total tranquilidad.</p>
+</div>
+<div class="group border-l border-on-primary/20 pl-8 hover:border-on-primary transition-colors">
+<h3 class="font-title-lg text-title-lg mb-2">Relaciones basadas en la confianza</h3>
+<p class="font-body-md text-body-md text-on-primary-container">La transparencia es nuestro único lenguaje. Construimos vínculos a largo plazo que trascienden el cierre de una venta.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section: Bento-ish Grid -->
+<section class="max-w-container-max mx-auto px-section-padding-h py-section-padding-v">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant block mb-2">El Equipo</span>
+<h2 class="font-headline-md text-headline-md text-primary">Mentes detrás de la excelencia.</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Member 1 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden mb-6">
+<img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a senior real estate executive in a minimalist studio. The lighting is editorial and sophisticated, emphasizing a clean-cut, trustworthy appearance. The subject wears a charcoal tailored suit against a soft grey background. The style is high-end corporate photography, consistent with a luxury brand's aesthetic of sobriety and precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhG3K4C74R7IzojBsYCksBvQlfY2iZlnQFPGmZ_h0txTEuD1qg3NJr2OO0D2tngeA_3KdCGUcz8Rjs060115U8RFwcJWw25iD3bNPeAVkUXdgds3LHK0hDakOUekjQyjFVM9eT-3V_vlOU2mXWhQDgorcDnVZl-vKYUTlFWwujd8QT4Vp88Eu9zTcYmvEWGzFObzNgD4ZEXAOu8DdVyxtcWtikVJgBa7P-tZGeTu2ahY-FFF8zEC66hOueAgziFab8wbSd6zRkre6J"/>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Alejandro Walder</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Managing Director</p>
+</div>
+<!-- Member 2 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden mb-6">
+<img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a senior female architect in a bright, minimalist office environment. Large windows provide soft natural light, highlighting her professional and visionary expression. She is dressed in a minimalist navy blazer. The image has a calm, prestigious editorial feel, focusing on high-quality skin tones and sharp focus, reflecting architectural precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbfjxsyKz-0LHBx9VUFpyRi6RJIED3tMT1o43L4TiQNMjBNnHWg3XFlJp2QNbLNGDBax9ibY8BxMHM5-iUhJgs5OwuLByJqVfsIHVXG980-lRQA_G9O_hYu7FzW85geq94E_npAizVMdfqgepqRWP02f4fAf5f7zwdCEk1UnNF3K_4ytQBSJKQ7Ke7DzERp8WHQUXcP4OAM-csZfZpR6T0IhQHQRGKIJpKHI4NA-M_dGayw1YvhLM43DlzFTJ-W5nPpEu4mZBqC4FN"/>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Elena M. Rossi</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Head of Architecture &amp; Design</p>
+</div>
+<!-- Member 3 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden mb-6">
+<img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" data-alt="A portrait of a male investment consultant in a modern, luxury boardroom setting. Low-key lighting creates a sense of exclusivity and deep focus. The subject has a confident, welcoming demeanor, wearing professional attire. The color palette is dominated by deep blues and whites, echoing the WM Property brand identity. The style is elegant, understated, and powerful." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1bE5ADy4A4OGOUhrSlZ19Jo7RNOrbDWrcxUl4o4BFa45-qixV0cOgpdXhYHIagnJ6t8O4h_Vlr-rFj_ih9dDB8WKbX6nB0mA63pmiNnQ4h_PRVRvFr1TEZTr5IwLzi582ticEUtRz1JSKzCCSJnwE9_I3fk0G6mjuec-OVRfiqQ_yeXR3DA3NcuH1oy9J9qgM-bJNneWO3eKbmNV1MaBUXSJJq5Dy8KzrfMkRQyLPRdVmAqAuD0fxMaCulSUGLqJoGgZMuNFWENaD"/>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Julian S. Moreno</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mt-1">International Investment Lead</p>
+</div>
+</div>
+</section>
+<!-- Legal Transparency Block -->
+<section class="bg-surface-container-low py-24 border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-section-padding-h text-center">
+<div class="max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">verified_user</span>
+<h2 class="font-title-lg text-title-lg text-primary mb-6 uppercase tracking-widest">Seguridad y Transparencia Legal</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">Operamos bajo los más estrictos estándares de la normativa europea. La confianza de nuestros clientes se fundamenta en nuestra total transparencia administrativa.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-left border-t border-outline-variant pt-12">
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Entidad</p>
+<p class="font-body-md font-bold text-primary">WM PROPERTY S.L.</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Identificación</p>
+<p class="font-body-md font-bold text-primary">NIF B882931XX</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Sede Central</p>
+<p class="font-body-md font-bold text-primary">Madrid, España</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Certificaciones</p>
+<p class="font-body-md font-bold text-primary">API / RERA Intl</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary">
+<div class="w-full py-section-padding-v px-section-padding-h max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col space-y-6">
+<div class="text-title-lg font-headline-md tracking-[0.2em] text-on-primary">WM PROPERTY</div>
+<p class="text-body-md font-body-md text-on-primary-container max-w-xs">Especialistas en activos inmobiliarios premium y consultoría de inversión en Madrid.</p>
+</div>
+<div>
+<h4 class="text-title-lg font-title-lg mb-6">Navegación</h4>
+<ul class="space-y-4">
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Inicio</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Comprar</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Alquilar</a></li>
+<li><a class="text-label-sm font-label-sm text-on-primary font-bold" href="#">Nosotros</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-title-lg font-title-lg mb-6">Inversores</h4>
+<ul class="space-y-4">
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Invierte con nosotros</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Servicios</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Proyectos exclusivos</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-title-lg font-title-lg mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Legal</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Privacidad</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-tertiary-fixed transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-section-padding-h py-8 border-t border-on-primary-fixed-variant/30 flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-on-primary-container">© 2024 WM PROPERTY. Madrid, España.</span>
+<div class="flex space-x-6">
+<a class="text-on-primary hover:text-tertiary-fixed" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (FAB for WhatsApp) -->
+<div class="fixed bottom-8 right-8 z-50">
+<a class="bg-tertiary-container text-on-tertiary p-4 rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all duration-300 group" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-3 transition-all duration-500 whitespace-nowrap text-label-sm font-label-sm">WhatsApp</span>
+</a>
+</div>
+<script>
+        // Simple reveal on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>
